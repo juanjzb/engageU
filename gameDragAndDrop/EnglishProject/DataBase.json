@@ -1,0 +1,104 @@
+{
+    "Animals": [
+        { 
+            "id": 1, 
+            "name": "Dog",
+            "img": "Images/Dog.png"
+        },
+        { 
+            "id": 2,
+            "name": "Cat",
+            "img": "Images/Cat.png"
+        },
+        { 
+            "id": 3, 
+            "name": "Horse", 
+            "img": "Images/Horse.png"
+        },
+        { 
+            "id": 4, 
+            "name": "Cow",
+            "img": "Images/Cow.png"
+        },
+        { 
+            "id": 5, 
+            "name": "Sheep",
+            "img": "Images/Sheep.png" 
+        },
+        { 
+            "id": 6, 
+            "name": "Goat",
+            "img": "Images/Goat.png" 
+        },
+        { 
+            "id": 7, 
+            "name": "Pig",
+            "img": "Images/Pig.png" 
+        },
+        { 
+            "id": 8, 
+            "name": "Chicken",
+            "img": "Images/Chicken.png" 
+        },
+        { 
+            "id": 9, 
+            "name": "Duck",
+            "img": "Images/Duck.png" 
+        },
+        { 
+            "id": 10, 
+            "name": "Turkey",
+            "img": "Images/Turkey.png" 
+        },
+        { 
+            "id": 11, 
+            "name": "Guinea pig",
+            "img": "Images/GuineaPig.png" 
+        },
+        { 
+            "id": 12, 
+            "name": "Rabbit",
+            "img": "Images/Rabbit.png" 
+        },
+        { 
+            "id": 13, 
+            "name": "Capybara",
+            "img": "Images/Capybara.png" 
+        },
+        { 
+            "id": 14, 
+            "name": "Ferret",
+            "img": "Images/Ferret.png" 
+        },
+        { 
+            "id": 15, 
+            "name": "Parrot",
+            "img": "Images/Parrot.png" 
+        },
+        { 
+            "id": 16, 
+            "name": "Crow",
+            "img": "Images/Crow.png" 
+        },
+        { 
+            "id": 17, 
+            "name": "Goldfish",
+            "img": "Images/Goldfish.png" 
+        },
+        { 
+            "id": 18, 
+            "name": "Turtle",
+            "img": "Images/Turtle.png"
+        },
+        { 
+            "id": 19, 
+            "name": "Lizard",
+            "img": "Images/Lizzard.png"
+        },
+        { 
+            "id": 20, 
+            "name": "Snake",
+            "img": "Images/Snake.png" 
+        }
+    ]
+}
