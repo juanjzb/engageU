@@ -1,6 +1,6 @@
 # engageU
 
-Beeri Josias Zeledon Pastran /n
-Julio Antonio Reyes Gonzalez
-Dietmar Jose Garcia Acuña
-Victor Sobalvarro 
+Beeri Josias Zeledon Pastran<br>
+Julio Antonio Reyes Gonzalez<br>
+Dietmar Jose Garcia Acuña<br>
+Victor Sobalvarro<br>
