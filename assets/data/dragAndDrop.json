@@ -1,0 +1,104 @@
+{
+    "Animals": [
+        {
+            "id": 1,
+            "name": "Dog",
+            "img": "./assets/img/dragAndDropGame/Dog.png"
+        },
+        {
+            "id": 2,
+            "name": "Cat",
+            "img": "./assets/img/dragAndDropGame/Cat.png"
+        },
+        {
+            "id": 3,
+            "name": "Horse",
+            "img": "./assets/img/dragAndDropGame/Horse.png"
+        },
+        {
+            "id": 4,
+            "name": "Cow",
+            "img": "./assets/img/dragAndDropGame/Cow.png"
+        },
+        {
+            "id": 5,
+            "name": "Sheep",
+            "img": "./assets/img/dragAndDropGame/Sheep.png"
+        },
+        {
+            "id": 6,
+            "name": "Goat",
+            "img": "./assets/img/dragAndDropGame/Goat.png"
+        },
+        {
+            "id": 7,
+            "name": "Pig",
+            "img": "./assets/img/dragAndDropGame/Pig.png"
+        },
+        {
+            "id": 8,
+            "name": "Chicken",
+            "img": "./assets/img/dragAndDropGame/Chicken.png"
+        },
+        {
+            "id": 9,
+            "name": "Duck",
+            "img": "./assets/img/dragAndDropGame/Duck.png"
+        },
+        {
+            "id": 10,
+            "name": "Turkey",
+            "img": "./assets/img/dragAndDropGame/Turkey.png"
+        },
+        {
+            "id": 11,
+            "name": "Guinea pig",
+            "img": "./assets/img/dragAndDropGame/GuineaPig.png"
+        },
+        {
+            "id": 12,
+            "name": "Rabbit",
+            "img": "./assets/img/dragAndDropGame/Rabbit.png"
+        },
+        {
+            "id": 13,
+            "name": "Capybara",
+            "img": "./assets/img/dragAndDropGame/Capybara.png"
+        },
+        {
+            "id": 14,
+            "name": "Ferret",
+            "img": "./assets/img/dragAndDropGame/Ferret.png"
+        },
+        {
+            "id": 15,
+            "name": "Parrot",
+            "img": "./assets/img/dragAndDropGame/Parrot.png"
+        },
+        {
+            "id": 16,
+            "name": "Crow",
+            "img": "./assets/img/dragAndDropGame/Crow.png"
+        },
+        {
+            "id": 17,
+            "name": "Goldfish",
+            "img": "./assets/img/dragAndDropGame/Goldfish.png"
+        },
+        {
+            "id": 18,
+            "name": "Turtle",
+            "img": "./assets/img/dragAndDropGame/Turtle.png"
+        },
+        {
+            "id": 19,
+            "name": "Lizard",
+            "img": "./assets/img/dragAndDropGame/Lizzard.png"
+        },
+        {
+            "id": 20,
+            "name": "Snake",
+            "img": "./assets/img/dragAndDropGame/Snake.png"
+        }
+    ]
+}
