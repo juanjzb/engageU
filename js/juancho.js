@@ -129,7 +129,7 @@ btnDragAndDropGame.addEventListener('click', e => {
   droppapleElements = document.querySelector('.droppaple-elements')
 
   for (let c = 1; c <= CARDS; c++) {
-    let id = getRandomId(20)
+    let id = getRandomId(12)
     searchAnimalsById(id)
   }
 })
