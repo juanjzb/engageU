@@ -30,5 +30,109 @@ btnHome.addEventListener('click', e => {
   e.preventDefault()
   createMainContent()
 })
+//////////////////////////////////////////////////////////////
+/* Boton de Personal Information */
 
+function personalInformation () {
+  const mainContent = document.getElementById('main-content')
+  mainContent.innerHTML = ''
+
+  const h1PI = document.createElement('h1')
+  const h1PItext = document.createTextNode('Agreguen contenido')
+
+  h1PI.appendChild(h1PItext)
+  mainContent.appendChild(h1PI)
+}
+
+const btnPersonalInformation = document.getElementById('btnPersonalInformation') 
+
+btnPersonalInformation.addEventListener('click', e => {
+  e.preventDefault()
+  personalInformation()
+})
+//////////////////////////////////////////////////////////////////
+/* Boton de Greetings */
+
+function greetings () {
+  const mainContent = document.getElementById('main-content')
+  mainContent.innerHTML = ''
+
+  const h1G = document.createElement('h1')
+  const h1GText = document.createTextNode('Agreguen contenido 2')
+
+  h1G.appendChild(h1GText)
+  mainContent.appendChild(h1G)
+}
+
+const btnGreetings = document.getElementById('btnGreetings') 
+
+btnGreetings.addEventListener('click', e => {
+  e.preventDefault()
+  greetings()
+})
+////////////////////////////////////////////////////////////////////
+/* Boton de Introducing MySelf Vocabulary */
+function mySelf () {
+  const mainContent = document.getElementById('main-content')
+  mainContent.innerHTML = ''
+
+  const h1MySelf = document.createElement('h1')
+  const h1MySelf_text = document.createTextNode('Agreguen contenido 3')
+
+  h1MySelf.appendChild(h1MySelf_text)
+  mainContent.appendChild(h1MySelf)
+} 
+
+const btnMySelf = document.getElementById('btnMySelf')
+
+btnMySelf.addEventListener('click', e => {
+  e.preventDefault()
+  mySelf()
+})
+/////////////////////////////////////////////////////////////////////
+/* Boton de Names And Titles */
+function namesAndTitles () {
+  const mainContent = document.getElementById('main-content')
+  mainContent.innerHTML = ''
+
+  const h1NamesAndTtiles = document.createElement('h1')
+  const h1NamesAndTtiles_text = document.createTextNode('Agreguen contenido 4')
+
+  h1NamesAndTtiles.appendChild(h1NamesAndTtiles_text)
+  mainContent.appendChild(h1NamesAndTtiles)
+}
+
+const btnNamesAndTitles = document.getElementById('btnNamesAndTitles')
+
+btnNamesAndTitles.addEventListener('click', e => {
+  e.preventDefault()
+  namesAndTitles()
+})
+///////////////////////////////////////////////////////////////////////
+/* Boton de Aplphabet */
+
+function alphabet () {
+  const mainContent = document.getElementById('main-content')
+  mainContent.innerHTML = ''
+
+  const h1Alphabet = document.createElement('h1')
+  const h1Alphabet_text = document.createTextNode('Agreguen contenido 5')
+
+  h1Alphabet.appendChild(h1Alphabet_text)
+  mainContent.appendChild(h1Alphabet)
+}
+
+const btnAlphabet = document.getElementById('btnAlphabet')
+
+btnAlphabet.addEventListener('click', e =>{
+  e.preventDefault()
+  alphabet()
+})
+
+
+alphabet()
+namesAndTitles()
+mySelf()
+greetings()
+personalInformation()
 createMainContent()
