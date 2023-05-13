@@ -3,7 +3,7 @@ let AnimalsNames = []
 let draggableElements = ''
 let droppapleElements = ''
 
-function renderDragAndDropGame () {
+function renderDragAndDropGame () {  
   const mainContent = document.getElementById('main-content')
   mainContent.innerHTML = ''
 
@@ -55,6 +55,7 @@ const getRandomId = max => {
   return Math.floor(Math.random() * max) + 1
 }
 
+const CARDS = 6
 async function searchAnimalsById (id) {
   const response = await fetch(`./assets/data/dragAndDrop.json`)
   const data = await response.json()
@@ -108,7 +109,7 @@ async function searchAnimalsById (id) {
         wrongMsg.innerText = ''
         points++
         if (points == CARDS) {
-          draggableElements.innerHTML = 'Ganaste :D'
+          draggableElements.innerHTML = 'You won :D'
         }
       } else {
         correctMsg.innerText = ''
@@ -122,8 +123,6 @@ const btnDragAndDropGame = document.getElementById('btnDragAndDropGame')
 btnDragAndDropGame.addEventListener('click', e => {
   e.preventDefault()
   renderDragAndDropGame()
-
-  const CARDS = 6
   draggableElements = document.querySelector('.draggable-elements')
   droppapleElements = document.querySelector('.droppaple-elements')
 
