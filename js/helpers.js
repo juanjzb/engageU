@@ -42,7 +42,7 @@ const Helpers = {
   _lastWindowHeight: 0,
 
   // *******************************************************************************
-  // * Utilities
+  // * Utilitie
 
   // ---
   // Scroll To Active Menu Item
