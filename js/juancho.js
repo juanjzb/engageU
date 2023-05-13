@@ -3,7 +3,7 @@ let AnimalsNames = []
 let draggableElements = ''
 let droppapleElements = ''
 
-function renderDragAndDropGame () {  
+function renderDragAndDropGame () {
   const mainContent = document.getElementById('main-content')
   mainContent.innerHTML = ''
 
@@ -98,6 +98,7 @@ async function searchAnimalsById (id) {
     name.addEventListener('dragover', event => {
       event.preventDefault()
     })
+
     name.addEventListener('drop', event => {
       const draggableElementData = event.dataTransfer.getData('text')
       let animalElement = document.querySelector(`#${draggableElementData}`)
@@ -109,7 +110,8 @@ async function searchAnimalsById (id) {
         wrongMsg.innerText = ''
         points++
         if (points == CARDS) {
-          draggableElements.innerHTML = 'You won :D'
+          // draggableElements.innerHTML = 'You won :D'
+          correctMsg.innerText = 'You Won!'
         }
       } else {
         correctMsg.innerText = ''
