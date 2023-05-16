@@ -1,10 +1,30 @@
-function personalInformation () {
-    const mainContent = document.getElementById('main-content')
-    mainContent.innerHTML = ''
-  
-    const h1PI = document.createElement('h1')
-    const h1PItext = document.createTextNode('Agreguen contenido')
-        
-    h1PI.appendChild(h1PItext)
-    mainContent.appendChild(h1PI)
-  }
+function QuestionsAndConversations () {
+  //Code Here
+}
+
+function ShortAnswers () {
+  //Code Here
+}
+
+function WHQuestions () {
+  //Code Here
+}
+
+const btnQuestionsAndConversations = document.getElementById(
+  'btnQuestionsAndConversations'
+)
+const btnShortAnswers = document.getElementById('btnShortAnswers')
+const btnWHQuestions = document.getElementById('btnWHQuestions')
+
+btnQuestionsAndConversations.addEventListener('click', e => {
+  e.preventDefault()
+  QuestionsAndConversations()
+})
+btnShortAnswers.addEventListener('click', e => {
+  e.preventDefault()
+  ShortAnswers()
+})
+btnWHQuestions.addEventListener('click', e => {
+  e.preventDefault()
+  WHQuestions()
+})
