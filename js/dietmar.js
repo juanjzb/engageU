@@ -1,13 +1,18 @@
 function Possesions () {
-  // Code here
+	const mainContent = document.getElementById('main-content')
+  mainContent.innerHTML = ''
+
 }
 
 function ClassroomsObjects () {
-  // Code here
+	const mainContent = document.getElementById('main-content')
+  mainContent.innerHTML = ''
+
 }
 
 function PersonalItems () {
-  // Code here
+	const mainContent = document.getElementById('main-content')
+  mainContent.innerHTML = ''
 }
 
 const btnPossesions = document.getElementById('btnPossesions')
