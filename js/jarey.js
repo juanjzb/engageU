@@ -170,18 +170,33 @@ btnDragAndDropGame.addEventListener('click', e => {
     searchAnimalsById(id)
   }
 })
-
+////////////////////////////////////////////////////////////////////
 /* Boton de Personal Information */
 
 function personalInformation () {
   const mainContent = document.getElementById('main-content')
   mainContent.innerHTML = ''
 
+  //Creando titulo
   const h1PI = document.createElement('h1')
-  const h1PItext = document.createTextNode('Agreguen contenido')
-
+  h1PI.className = 'text-center text-success'
+  const h1PItext = document.createTextNode('Personal Information')
+  h1PI.classList.add('text-justify')
+  h1PI.classList.add('lh-lg')
   h1PI.appendChild(h1PItext)
   mainContent.appendChild(h1PI)
+
+  //Creando subtitulo
+  const subtituloPI = document.createElement('h3')
+  subtituloPI.className = 'text-info font-italic'
+  const subtituloPItext = document.createTextNode('Vocabulary')
+
+  subtituloPI.appendChild(subtituloPItext)
+  mainContent.appendChild(subtituloPI)
+
+  //Creando informacion
+  const infoPI = document.createElement('p')
+  infoPI
 }
 
 //////////////////////////////////////////////////////////////////
