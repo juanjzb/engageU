@@ -1,5 +1,13 @@
 function PresentContinuous () {
-  //Code Here
+  const mainContent = document.getElementById('main-content')
+  mainContent.innerHTML = ''
+
+  const h1 = document.createElement('h1')
+  const textH1 = document.createTextNode('Topic: Present Continuous')
+
+  h1.appendChild(textH1)
+
+  mainContent.appendChild(h1)
 }
 function EverydayExpressions () {
   //Code Here

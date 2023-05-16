@@ -30,6 +30,9 @@ btnHome.addEventListener('click', e => {
   e.preventDefault()
   createMainContent()
 })
+
+createMainContent()
+
 //////////////////////////////////////////////////////////////
 
 let AnimalFound = []
