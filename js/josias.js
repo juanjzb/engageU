@@ -17,9 +17,19 @@ function QuestionsAndConversations() {
 
   const image = document.createElement('img');
   image.src = './assets/img/Questions and conversations/Screenshot 2023-05-16 122332.png';
-  image.alt = 'no cargo, F';
+  image.alt = 'Descripción de la imagen';
+  image.style.border = '2px solid black'; // Agrega el marco alrededor de la imagen
   mainContent.appendChild(image);
+
+  const audio = document.createElement('audio');
+  audio.src = './assets/img/Questions and conversations/y2mate.com - Efecto de sonido Yamete Kudasai xd.mp3';
+  audio.controls = true;
+  audio.style.marginTop = '10px'; // Agrega espacio superior entre la imagen y el audio
+  audio.style.border = '2px solid black'; // Agrega el borde al elemento de audio
+  mainContent.appendChild(audio);
 }
+
+
 
 
 
