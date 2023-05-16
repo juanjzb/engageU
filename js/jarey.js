@@ -18,7 +18,7 @@ function createMainContent () {
 
   bienvenida.classList.add('fs-4')
   bienvenida.classList.add('text-justify')
-  // bienvenida.classList.add('lh-lg')
+  bienvenida.classList.add('lh-lg')
   bienvenida.appendChild(bienvenida_text)
   div.appendChild(bienvenida)
   mainContent.appendChild(bienvenida)
