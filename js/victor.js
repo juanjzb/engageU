@@ -23,6 +23,14 @@ function PresentContinuous () {
   paragrafhTres.appendChild(txtTres)
   mainContent.appendChild(paragrafhTres)
 
+  const paragrafhCuatro = document.createElement('h3')
+  paragrafh.className = 'align-baseline'
+  const txtCuatro = document.createTextNode('Example ')
+  paragrafhCuatro.appendChild(txtCuatro)
+  mainContent.appendChild(paragrafhCuatro)
+
+
+
 
 
 
