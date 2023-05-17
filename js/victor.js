@@ -194,6 +194,10 @@ function PresentContinuous () {
       checkAnswer(index, exercise.answers, input.value.trim())
       input.disabled = true; // Deshabilita el input para evitar múltiples respuestas
     }
+  const resetbutton = document.createElement('button')
+  resetbutton.setAttribute("type", "reset");
+  document.body.appendChild(resetbutton)
+  mainContent.appendChild(resetbutton)
   })
 
   mainyoContent.appendChild(exerciseDiv)
@@ -220,11 +224,34 @@ function PresentContinuous () {
     resultText.classList.remove('correct')
     resultText.classList.add('incorrect')
   }
+
+  
  }
+if (score < 4) {
+    scoreDiv.style.color = 'red';
+  } else if (score > 4 && score <= 7) {
+    scoreDiv.style.color = 'orange';
+  } else {
+    scoreDiv.style.color = 'green';
+  }
+}
+
+function resetExercise() {
+  score = 0;
+  scoreDiv.textContent = `Score: ${score}`;
+  scoreDiv.style.color = ''; // Restablecer el color del marcador de puntuación
 
  // Code here for more code
 }
   
+
+
+
+
+
+
+
+
 
 function EverydayExpressions () {
   //Code Here
@@ -232,16 +259,6 @@ function EverydayExpressions () {
 function ShortQuestions () {
   //Code Here
 }
-
-
-
-
-
-
-
-
-
-
 
 
 const btnPresentContinuous = document.getElementById('btnPresentContinuous')
