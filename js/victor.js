@@ -246,15 +246,59 @@ function resetExercise() {
   
 
 
-
-
-
-
-
-
-
 function EverydayExpressions () {
   //Code Here
+  const mainContent = document.getElementById('main-content')
+  mainContent.innerHTML = ''
+
+  const h1 = document.createElement('h1')
+  h1.className = 'text-center text-success'
+  const textH1 = document.createTextNode('Everyday Expressions')
+  h1.appendChild(textH1)
+  mainContent.appendChild(h1)
+
+  const parrafoUno = document.createElement('p')
+  parrafoUno.innerHTML = 'In the case of "everyday expressions", there is no strict formula for their creation, since they are phrases and expressions that arise naturally in the context of informal oral communication. However, there are some common characteristics that can be taken into account when using these types of expressions: <br>'
+  mainContent.appendChild(parrafoUno)
+  
+  const parrafoDos = document.createElement('h4')
+  parrafoDos.className = 'align-baseline'
+  parrafoDos.style.marginLeft = '30px'
+  const textDos = document.createTextNode('Informality: ')
+  parrafoDos.appendChild(textDos)
+  mainContent.appendChild(parrafoDos)
+
+  const divContainerCinco = document.createElement('div')
+  divContainerCinco.style.display = 'flex'
+  divContainerCinco.appendChild(parrafoDos)
+  const parrafoTres = document.createElement('p')
+  parrafoTres.innerHTML = "Everyday expressions are usually informal and colloquial, so they don't follow <br> strict grammar rules or have a formal tone. They are very simple phrases <br> to satisfy specific needs. <br>"
+  parrafoTres.style.marginLeft = '40px'
+  parrafoTres.style.marginTop = '3px'
+  parrafoTres.style.marginBottom = '20px'
+  divContainerCinco.appendChild(parrafoTres)
+  mainContent.appendChild(divContainerCinco)
+  
+  const parrafoSeis = document.createElement('h4')
+  parrafoSeis.className = 'align-baseline'
+  parrafoSeis.style.marginLeft = '30px'
+  parrafoSeis.style.marginTop = '30px'
+  const textTres = document.createTextNode('Contextuality: ')
+  parrafoSeis.appendChild(textTres)
+  mainContent.appendChild(parrafoSeis)
+
+  // Meterle el contenido al bloque anterior. 
+
+
+
+
+
+
+
+
+
+
+
 }
 function ShortQuestions () {
   //Code Here
