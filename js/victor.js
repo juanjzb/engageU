@@ -120,9 +120,116 @@ function PresentContinuous () {
   const txtDiezOcho = document.createTextNode('Here, the stative verb to prefer shows opinion, and therefore should not be conjugated into the present continuous. Stative verb categories include emotion (to love), possession (to belong), and thoughts (to recognize), and none of these should use the present continuous form.')
   paragrafhDiezOcho.appendChild(txtDiezOcho)
   mainContent.appendChild(paragrafhDiezOcho)
+ 
+  const mainyoContent = document.getElementById('main-content')
+  let score = 0 // Variable para almacenar la puntuación
+  const exerciseHeader = document.createElement('h3')
+  exerciseHeader.textContent = 'Complete the sentences in Present Simple (English)'
+  mainyoContent.appendChild(exerciseHeader)
+  const exercises = [
+  {
+    sentence: 'I ___________ (play) soccer every weekend.',
+    answers: ['play'],
+  },
+  {
+    sentence: 'She ___________ (study) French at school.',
+    answers: ['studies'],
+  },
+  {
+    sentence: 'They ___________ (watch) a movie every Friday night.',
+    answers: ['watch'],
+  },
+  {
+    sentence: 'We ___________ (eat) dinner at 7 o\'clock.',
+    answers: ['eat'],
+  },
+  {
+    sentence: 'He ___________ (go) to the gym three times a week.',
+    answers: ['goes'],
+  },
+  {
+    sentence: 'You ___________ (read) a book before bed.',
+    answers: ['read'],
+  },
+  {
+    sentence: 'The dog ___________ (bark) loudly at strangers.',
+    answers: ['barks'],
+  },
+  {
+    sentence: 'My sister ___________ (work) as a teacher.',
+    answers: ['works'],
+  },
+  {
+    sentence: 'We ___________ (live) in a small town.',
+    answers: ['live'],
+  },
+  {
+    sentence: 'They ___________ (play) the guitar in a band.',
+    answers: ['play'],
+  },
+];
 
+  exercises.forEach((exercise, index) => {
+  const exerciseDiv = document.createElement('div')
+  exerciseDiv.className = 'exercise'
+
+  const sentenceText = document.createElement('p')
+  sentenceText.innerHTML = `${index + 1}. ${exercise.sentence}`
+  exerciseDiv.appendChild(sentenceText)
+
+  const input = document.createElement('input')
+  input.type = 'text';
+  input.placeholder = 'Enter your answer'
+  exerciseDiv.appendChild(input);
+
+  const resultText = document.createElement('div')
+  resultText.id = `result-${index}`
+  resultText.className = 'result-text'
+  exerciseDiv.appendChild(resultText)
+
+  input.addEventListener('keypress', (event) => {
+    if (event.key === 'Enter') {
+      checkAnswer(index, exercise.answers, input.value.trim())
+      input.disabled = true // Deshabilita el input para evitar múltiples respuestas
+    }
+  })
+
+  mainyoContent.appendChild(exerciseDiv)
+})
+
+  const scoreDiv = document.createElement('div')
+  scoreDiv.className = 'score';
+  scoreDiv.textContent = `Score: ${score} / 10`
+  mainyoContent.appendChild(scoreDiv)
+
+  function checkAnswer(index, answers, userInput) {
+  const correctAnswers = answers.map(answer => answer.toLowerCase())
+  const userAnswer = userInput.toLowerCase()
+  const resultText = document.getElementById(`result-${index}`)
   
+  if (correctAnswers.includes(userAnswer)) {
+    resultText.textContent = 'Correct!'
+    resultText.classList.remove('incorrect')
+    resultText.classList.add('correct');
+    score += 1 // Suma un punto si la respuesta es correcta
+    scoreDiv.textContent = `Score: ${score}` // Actualiza el marcador de puntos
+  } else {
+    resultText.textContent = 'Incorrect. Try again!'
+    resultText.classList.remove('correct')
+    resultText.classList.add('incorrect')
+  }
+ }
+
+
 }
+  
+
+
+
+
+
+
+
 function EverydayExpressions () {
   //Code Here
 }
