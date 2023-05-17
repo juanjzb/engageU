@@ -120,15 +120,146 @@ function PresentContinuous () {
   const txtDiezOcho = document.createTextNode('Here, the stative verb to prefer shows opinion, and therefore should not be conjugated into the present continuous. Stative verb categories include emotion (to love), possession (to belong), and thoughts (to recognize), and none of these should use the present continuous form.')
   paragrafhDiezOcho.appendChild(txtDiezOcho)
   mainContent.appendChild(paragrafhDiezOcho)
+ 
+  const mainyoContent = document.getElementById('main-content')
+  let score = 0 // Variable para almacenar la puntuación
+
+  const exerciseHeader = document.createElement('h3')
+  exerciseHeader.textContent = 'Complete the sentences in Present Continuous (English)'
+  mainyoContent.appendChild(exerciseHeader)
+
+  const exercises = [
+  {
+    sentence: 'I ___________ (play) soccer right now.',
+    answers: ['am playing'],
+  },
+  {
+    sentence: 'She ___________ (study) French at the moment.',
+    answers: ['is studying'],
+  },
+  {
+    sentence: 'They ___________ (watch) a movie tonight.',
+    answers: ['are watching'],
+  },
+  {
+    sentence: 'We ___________ (eat) dinner at the restaurant.',
+    answers: ['are eating'],
+  },
+  {
+    sentence: 'He ___________ (go) to the gym this afternoon.',
+    answers: ['is going'],
+  },
+  {
+    sentence: 'You ___________ (read) a book right now.',
+    answers: ['are reading'],
+  },
+  {
+    sentence: 'The dog ___________ (bark) loudly at the mailman.',
+    answers: ['is barking'],
+  },
+  {
+    sentence: 'My sister ___________ (work) on a project.',
+    answers: ['is working'],
+  },
+  {
+    sentence: 'We ___________ (wait) for the bus.',
+    answers: ['are waiting'],
+  },
+  {
+    sentence: 'They ___________ (play) tennis this afternoon.',
+    answers: ['are playing'],
+  },
+];
+
+  exercises.forEach((exercise, index) => {
+  const exerciseDiv = document.createElement('div')
+  exerciseDiv.className = 'exercise'
+
+  const sentenceText = document.createElement('p')
+  sentenceText.innerHTML = `${index + 1}. ${exercise.sentence}`
+  exerciseDiv.appendChild(sentenceText)
+
+  const input = document.createElement('input')
+  input.type = 'text'
+  input.placeholder = 'Enter your answer'
+  exerciseDiv.appendChild(input)
+
+  const resultText = document.createElement('div')
+  resultText.id = `result-${index}`
+  resultText.className = 'result-text'
+  exerciseDiv.appendChild(resultText)
+
+  input.addEventListener('keypress', (event) => {
+    if (event.key === 'Enter') {
+      checkAnswer(index, exercise.answers, input.value.trim())
+      input.disabled = true; // Deshabilita el input para evitar múltiples respuestas
+    }
+  const resetbutton = document.createElement('button')
+  resetbutton.setAttribute("type", "reset");
+  document.body.appendChild(resetbutton)
+  mainContent.appendChild(resetbutton)
+  })
+
+  mainyoContent.appendChild(exerciseDiv)
+})
+
+  const scoreDiv = document.createElement('div')
+  scoreDiv.className = 'score';
+  scoreDiv.textContent = `Score: ${score}`
+  mainyoContent.appendChild(scoreDiv)
+
+  function checkAnswer(index, answers, userInput) {
+  const correctAnswers = answers.map(answer => answer.toLowerCase())
+  const userAnswer = userInput.toLowerCase();
+  const resultText = document.getElementById(`result-${index}`)
+  
+  if (correctAnswers.includes(userAnswer)) {
+    resultText.textContent = 'Correct!'
+    resultText.classList.remove('incorrect')
+    resultText.classList.add('correct')
+    score += 1; // Suma un punto si la respuesta es correcta
+    scoreDiv.textContent = `Score: ${score} / 10 ` // Actualiza el marcador de puntos
+  } else {
+    resultText.textContent = 'Incorrect. Try again!'
+    resultText.classList.remove('correct')
+    resultText.classList.add('incorrect')
+  }
 
   
+ }
+if (score < 4) {
+    scoreDiv.style.color = 'red';
+  } else if (score > 4 && score <= 7) {
+    scoreDiv.style.color = 'orange';
+  } else {
+    scoreDiv.style.color = 'green';
+  }
 }
+
+function resetExercise() {
+  score = 0;
+  scoreDiv.textContent = `Score: ${score}`;
+  scoreDiv.style.color = ''; // Restablecer el color del marcador de puntuación
+
+ // Code here for more code
+}
+  
+
+
+
+
+
+
+
+
+
 function EverydayExpressions () {
   //Code Here
 }
 function ShortQuestions () {
   //Code Here
 }
+
 
 const btnPresentContinuous = document.getElementById('btnPresentContinuous')
 const btnEverydayExpressions = document.getElementById('btnEverydayExpressions')
