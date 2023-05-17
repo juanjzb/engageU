@@ -78,7 +78,7 @@ function renderDragAndDropGame () {
 
   correctAnswer.classList.add('correct')
   correctAnswer.appendChild(textCorrect)
-
+  
   gameContainer.appendChild(h1)
   gameContainer.appendChild(h5)
   gameContainer.appendChild(draggable_elements)
@@ -87,12 +87,11 @@ function renderDragAndDropGame () {
   gameContainer.appendChild(correctAnswer)
   mainContent.appendChild(gameContainer)
 }
-
+const CARDS = 6
 const getRandomId = max => {
   return Math.floor(Math.random() * max) + 1
 }
 
-const CARDS = 6
 async function searchAnimalsById (id) {
   const response = await fetch(`./assets/data/dragAndDrop.json`)
   const data = await response.json()
