@@ -1,12 +1,9 @@
 function PresentContinuous () {
   const mainContent = document.getElementById('main-content')
   mainContent.innerHTML = ''
-
-  const h1 = document.createElement('h1')
-  h1.className = 'text-center text-success'
-  const textH1 = document.createTextNode('Present Continuous')
-  h1.appendChild(textH1)
-  mainContent.appendChild(h1)
+  const nav = document.getElementById('sexo')
+  nav.innerHTML = 'Present Continous'
+  nav.className = 'text-success'
 
   const paragrafh = document.createElement('p')
   const txtUno = document.createTextNode('The present continuous verb tense indicates that an action or condition is happening now, frequently,and may continue into the future. It generally refers to situations or actions that are being carried out at the moment and, as in Spanish, learning this tense is essential to have fluency and expression in any conversation in English.')
@@ -247,15 +244,13 @@ function resetExercise() {
 
 
 function EverydayExpressions () {
-  //Code Here
+  const nav = document.getElementById('sexo')
+  nav.innerHTML = 'Everyday Expressions'
+  nav.className = 'text-success'
   const mainContent = document.getElementById('main-content')
   mainContent.innerHTML = ''
+  //Code Here
 
-  const h1 = document.createElement('h1')
-  h1.className = 'text-center text-success'
-  const textH1 = document.createTextNode('Everyday Expressions')
-  h1.appendChild(textH1)
-  mainContent.appendChild(h1)
 
   const parrafoUno = document.createElement('p')
   parrafoUno.innerHTML = 'In the case of "everyday expressions", there is no strict formula for their creation, since they are phrases and expressions that arise naturally in the context of informal oral communication. However, there are some common characteristics that can be taken into account when using these types of expressions: <br>'
@@ -288,20 +283,14 @@ function EverydayExpressions () {
   mainContent.appendChild(parrafoSeis)
 
   // Meterle el contenido al bloque anterior. 
-
-
-
-
-
-
-
-
-
-
-
 }
 function ShortQuestions () {
-  //Code Here
+  const nav = document.getElementById('sexo')
+  nav.innerHTML = 'Short questions'
+  nav.className = 'text-success'
+  const mainContent = document.getElementById('main-content')
+  mainContent.innerHTML = ''
+  //Code here
 }
 
 

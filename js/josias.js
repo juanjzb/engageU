@@ -1,12 +1,17 @@
 function QuestionsAndConversations() {
   const mainContent = document.getElementById('main-content');
   mainContent.innerHTML = '';
-
+  const nav = document.getElementById('sexo')
+  nav.innerHTML = 'Questions and conversations'
+  nav.className = 'text-success'
+  
   const h1 = document.createElement('h1');
   const h1_text = document.createTextNode('Unit III- Where are you from?');
   h1.appendChild(h1_text);
   h1.className = 'text-center text-primary';
   mainContent.appendChild(h1);
+
+  const texto = document.createElement("h3")
 
   const contenido = document.createElement('h3');
   const contenido_text = document.createTextNode('Cities and countries');
@@ -133,6 +138,32 @@ function QuestionsAndConversations() {
   });
 
   mainContent.appendChild(conversation);
+
+  const textoo = document.createElement("h3")
+  const textotexto = document.createTextNode("2.Conversation...Are you from Seoul?")
+  textoo.appendChild(textotexto)
+  textoo.style.marginTop = "30px"
+  mainContent.appendChild(textoo)
+
+
+  const lap = document.createElement("h3")
+  const laptxt = document.createTextNode("A) Listen and practice")
+  lap.className = "text-center"
+  lap.appendChild(laptxt)
+  texto.style.marginTop = "70px"
+  mainContent.appendChild(lap)
+
+  const conversacion = document.createElement("p")
+  conversacion.innerHTML = "<b>Tim:</b> Are you from California, Jessica? <br> <b>Jessica:</b> Well, my family is in California now, But we're from south Korea originally. <br> <b>Tim:</b> Oh, my mother is Korean- from Seoul!. Are you from Seoul? <br> <b>Jessica:</b> No, we're not. We're from Daejeon. <br> <b>Tim:</b> So, is your first language Korean? <br> <b>Jessicca:</b> Yes, It is."
+
+  mainContent.appendChild(conversacion)
+
+  
+
+  
+
+
+  
 }
 
 function checkAnswer(index, answer) {
@@ -150,6 +181,8 @@ function checkAnswer(index, answer) {
   }
 }
 
+
+
 function checkConversationAnswer(index, answer) {
   const userInput = document.getElementById(`conversation-answer-${index}`).value.toLowerCase();
   const correctAnswer = answer.toLowerCase();
@@ -162,12 +195,16 @@ function checkConversationAnswer(index, answer) {
     resultText.textContent = 'Incorrecto';
     resultText.classList.remove('correct');
     resultText.classList.add('incorrect');
+
+    
+    
   }
 }
 
-  
-  
-  
+
+
+
+
 
 
 
@@ -184,11 +221,15 @@ function checkConversationAnswer(index, answer) {
 
 
 function ShortAnswers () {
-  //Code Here
+  const nav = document.getElementById('sexo')
+  nav.innerHTML = 'Short Answer'
+  nav.className = 'text-success'
 }
 
 function WHQuestions () {
-  //Code Here
+  const nav = document.getElementById('sexo')
+  nav.innerHTML = 'Greetings'
+  nav.className = 'text-success'
 }
 
 const btnQuestionsAndConversations = document.getElementById(
