@@ -123,49 +123,51 @@ function PresentContinuous () {
  
   const mainyoContent = document.getElementById('main-content')
   let score = 0 // Variable para almacenar la puntuación
+
   const exerciseHeader = document.createElement('h3')
-  exerciseHeader.textContent = 'Complete the sentences in Present Simple (English)'
+  exerciseHeader.textContent = 'Complete the sentences in Present Continuous (English)'
   mainyoContent.appendChild(exerciseHeader)
+
   const exercises = [
   {
-    sentence: 'I ___________ (play) soccer every weekend.',
-    answers: ['play'],
+    sentence: 'I ___________ (play) soccer right now.',
+    answers: ['am playing'],
   },
   {
-    sentence: 'She ___________ (study) French at school.',
-    answers: ['studies'],
+    sentence: 'She ___________ (study) French at the moment.',
+    answers: ['is studying'],
   },
   {
-    sentence: 'They ___________ (watch) a movie every Friday night.',
-    answers: ['watch'],
+    sentence: 'They ___________ (watch) a movie tonight.',
+    answers: ['are watching'],
   },
   {
-    sentence: 'We ___________ (eat) dinner at 7 o\'clock.',
-    answers: ['eat'],
+    sentence: 'We ___________ (eat) dinner at the restaurant.',
+    answers: ['are eating'],
   },
   {
-    sentence: 'He ___________ (go) to the gym three times a week.',
-    answers: ['goes'],
+    sentence: 'He ___________ (go) to the gym this afternoon.',
+    answers: ['is going'],
   },
   {
-    sentence: 'You ___________ (read) a book before bed.',
-    answers: ['read'],
+    sentence: 'You ___________ (read) a book right now.',
+    answers: ['are reading'],
   },
   {
-    sentence: 'The dog ___________ (bark) loudly at strangers.',
-    answers: ['barks'],
+    sentence: 'The dog ___________ (bark) loudly at the mailman.',
+    answers: ['is barking'],
   },
   {
-    sentence: 'My sister ___________ (work) as a teacher.',
-    answers: ['works'],
+    sentence: 'My sister ___________ (work) on a project.',
+    answers: ['is working'],
   },
   {
-    sentence: 'We ___________ (live) in a small town.',
-    answers: ['live'],
+    sentence: 'We ___________ (wait) for the bus.',
+    answers: ['are waiting'],
   },
   {
-    sentence: 'They ___________ (play) the guitar in a band.',
-    answers: ['play'],
+    sentence: 'They ___________ (play) tennis this afternoon.',
+    answers: ['are playing'],
   },
 ];
 
@@ -178,9 +180,9 @@ function PresentContinuous () {
   exerciseDiv.appendChild(sentenceText)
 
   const input = document.createElement('input')
-  input.type = 'text';
+  input.type = 'text'
   input.placeholder = 'Enter your answer'
-  exerciseDiv.appendChild(input);
+  exerciseDiv.appendChild(input)
 
   const resultText = document.createElement('div')
   resultText.id = `result-${index}`
@@ -190,7 +192,7 @@ function PresentContinuous () {
   input.addEventListener('keypress', (event) => {
     if (event.key === 'Enter') {
       checkAnswer(index, exercise.answers, input.value.trim())
-      input.disabled = true // Deshabilita el input para evitar múltiples respuestas
+      input.disabled = true; // Deshabilita el input para evitar múltiples respuestas
     }
   })
 
@@ -199,20 +201,20 @@ function PresentContinuous () {
 
   const scoreDiv = document.createElement('div')
   scoreDiv.className = 'score';
-  scoreDiv.textContent = `Score: ${score} / 10`
+  scoreDiv.textContent = `Score: ${score}`
   mainyoContent.appendChild(scoreDiv)
 
   function checkAnswer(index, answers, userInput) {
   const correctAnswers = answers.map(answer => answer.toLowerCase())
-  const userAnswer = userInput.toLowerCase()
+  const userAnswer = userInput.toLowerCase();
   const resultText = document.getElementById(`result-${index}`)
   
   if (correctAnswers.includes(userAnswer)) {
     resultText.textContent = 'Correct!'
     resultText.classList.remove('incorrect')
-    resultText.classList.add('correct');
-    score += 1 // Suma un punto si la respuesta es correcta
-    scoreDiv.textContent = `Score: ${score}` // Actualiza el marcador de puntos
+    resultText.classList.add('correct')
+    score += 1; // Suma un punto si la respuesta es correcta
+    scoreDiv.textContent = `Score: ${score} / 10 ` // Actualiza el marcador de puntos
   } else {
     resultText.textContent = 'Incorrect. Try again!'
     resultText.classList.remove('correct')
@@ -220,15 +222,9 @@ function PresentContinuous () {
   }
  }
 
-
+ // Code here for more code
 }
   
-
-
-
-
-
-
 
 function EverydayExpressions () {
   //Code Here
@@ -236,6 +232,17 @@ function EverydayExpressions () {
 function ShortQuestions () {
   //Code Here
 }
+
+
+
+
+
+
+
+
+
+
+
 
 const btnPresentContinuous = document.getElementById('btnPresentContinuous')
 const btnEverydayExpressions = document.getElementById('btnEverydayExpressions')
