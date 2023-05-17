@@ -99,56 +99,75 @@ function QuestionsAndConversations() {
     { placeholder: 'Enter', answer: 'am' },
     { placeholder: 'Enter', answer: "am" },
   ];
+
   conversationInputs.forEach((inputData, index) => {
     const input = document.createElement('input');
-input.type = 'text';
-input.placeholder = inputData.placeholder;
-input.id =`conversation-answer-${index}`;
-conversation.appendChild(input);
-const resultText = document.createElement('div');
-resultText.id = `conversation-result-${index}`;
-resultText.className = 'result-text';
-conversation.appendChild(resultText);
-input.addEventListener('keypress', (event) => {
-  if (event.key === 'Enter') {
-    checkConversationAnswer(index, inputData.answer);
-  }
-});
-});
-mainContent.appendChild(conversation);
+    input.type = 'text';
+    input.placeholder = inputData.placeholder;
+    input.id = `conversation-answer-${index}`;
+    input.setAttribute('list', `conversation-options-${index}`);
+    input.style.margin = "4px";
+    conversation.appendChild(input);
+
+    const dataList = document.createElement('datalist');
+    dataList.id = `conversation-options-${index}`;
+
+    ['am', "'m", 'are', "'re", 'is', "'s"].forEach((option) => {
+      const optionElement = document.createElement('option');
+      optionElement.value = option;
+      dataList.appendChild(optionElement);
+    });
+
+    conversation.appendChild(dataList);
+
+    const resultText = document.createElement('div');
+    resultText.id = `conversation-result-${index}`;
+    resultText.className = 'result-text';
+    conversation.appendChild(resultText);
+
+    input.addEventListener('keypress', (event) => {
+      if (event.key === 'Enter') {
+        checkConversationAnswer(index, inputData.answer);
+      }
+    });
+  });
+
+  mainContent.appendChild(conversation);
 }
 
 function checkAnswer(index, answer) {
-  document.getElementById(`answer-${index}`).value.toLowerCase();
-const correctAnswer = answer.toLowerCase();
-const resultText = document.getElementById(`result-${index}`);
-if (userInput === correctAnswer) {
-  resultText.textContent = 'Correcto';
-resultText.classList.remove('incorrect');
-resultText.classList.add('correct');
-}else{
-  resultText.textContent = 'Incorrecto';
-resultText.classList.remove('correct');
-resultText.classList.add('incorrect');
-}
+  const userInput = document.getElementById(`answer-${index}`).value.toLowerCase();
+  const correctAnswer = answer.toLowerCase();
+  const resultText = document.getElementById(`result-${index}`);
+  if (userInput === correctAnswer) {
+    resultText.textContent = 'Correcto';
+    resultText.classList.remove('incorrect');
+    resultText.classList.add('correct');
+  } else {
+    resultText.textContent = 'Incorrecto';
+    resultText.classList.remove('correct');
+    resultText.classList.add('incorrect');
+  }
 }
 
 function checkConversationAnswer(index, answer) {
   const userInput = document.getElementById(`conversation-answer-${index}`).value.toLowerCase();
-const correctAnswer = answer.toLowerCase();
-const resultText = document.getElementById(`conversation-result-${index}`);
-if (userInput === correctAnswer) {  
-  resultText.textContent = 'Correcto';
-resultText.classList.remove('incorrect');
-resultText.classList.add('correct');
-}else{
-  resultText.textContent = 'Incorrecto';
-resultText.classList.remove('correct');
-resultText.classList.add('incorrect');
-}
+  const correctAnswer = answer.toLowerCase();
+  const resultText = document.getElementById(`conversation-result-${index}`);
+  if (userInput === correctAnswer) {
+    resultText.textContent = 'Correcto';
+    resultText.classList.remove('incorrect');
+    resultText.classList.add('correct');
+  } else {
+    resultText.textContent = 'Incorrecto';
+    resultText.classList.remove('correct');
+    resultText.classList.add('incorrect');
+  }
 }
 
-
+  
+  
+  
 
 
 
