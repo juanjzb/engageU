@@ -14,19 +14,114 @@ function PresentContinuous () {
   mainContent.appendChild(paragrafh)
 
   const paragrafhDos = document.createElement('h3')
-  const txtDos = document.createTextNode('The Present Continuous Formula:')
-  paragrafhDos.appendChild(txtDos)
+  paragrafhDos.innerHTML = '<br>The Present Continuous Formula:'
   mainContent.appendChild(paragrafhDos)
 
   const paragrafhTres = document.createElement('p')
-  const txtTres = document.createTextNode(' to be [am, is, are] + verb [present participle]')
+  const txtTres = document.createTextNode(' to be [Am, Is, Are] + Verb [Present Participle]')
   paragrafhTres.appendChild(txtTres)
   mainContent.appendChild(paragrafhTres)
 
+  const paragrafhCuatro = document.createElement('h3')
+  paragrafh.className = 'align-baseline'
+  const txtCuatro = document.createTextNode('Example ')
+  paragrafhCuatro.appendChild(txtCuatro)
+  mainContent.appendChild(paragrafhCuatro)
 
+  const divContainer = document.createElement('div')
+  divContainer.style.display = 'flex' //Esto establece el estilo para mostrar los elementos en línea
+  divContainer.appendChild(paragrafhCuatro)  //Agrega el elemento original
+  const paragrafhCinco = document.createElement('p')  //Agrega el nuevo elemento de bloque de texto
+  paragrafhCinco.innerHTML = 'Aunt Christine is warming up the car while Scott is looking for his new leather coat, <br> they are eating at Scott’s favorite restaurant today, Polly’s Pancake Diner.'
+  paragrafhCinco.style.marginLeft = '50px'
+  paragrafhCinco.style.marginTop = '5px'
+  divContainer.appendChild(paragrafhCinco)
+  mainContent.appendChild(divContainer)
 
+  const paragrafhSeis = document.createElement('p')
+  paragrafhSeis.innerHTML = '<br>The present continuous (present progressive) tense is a way to convey any action or condition that is happening right now, frequently, and may be ongoing. It adds energy and action to writing, and its effect helps readers understand when the action is happening. Imagine Aunt Christine has surprised her nephew Scott for his birthday and is going to take him out to his favorite restaurant, Polly’s Pancake Diner. If I wanted to tell the story after it happened, I’d use the past tense.'
+  mainContent.appendChild(paragrafhSeis)
+  
+  const paragrafhSiete = document.createElement('h3')
+  paragrafhSiete.innerHTML = '<br>When to Use the Present Continuous Tense?'
+  mainContent.appendChild(paragrafhSiete)
+  
+  const paragrafhOcho = document.createElement('p')
+  const txtOcho = document.createTextNode('Use the present continuous tense with the appropriate “to be” verb and a dynamic verb. A dynamic verb shows action and/or process. For example:')
+  paragrafhOcho.appendChild(txtOcho)
+  mainContent.appendChild(paragrafhOcho)
 
+  const paragrafhNueve = document.createElement('h3')
+  paragrafhNueve.className = 'align-baseline'
+  const txtNueve = document.createTextNode('Example')
+  paragrafhNueve.appendChild(txtNueve)
+  mainContent.appendChild(paragrafhNueve)
 
+  const divContainerDos = document.createElement('div')
+  divContainerDos.style.display = 'flex'
+  divContainerDos.appendChild(paragrafhNueve)
+  const paragrafhDiez = document.createElement('p')
+  paragrafhDiez.innerHTML = 'Scott’s little sister is arriving at the diner two hours late because her <br> roller-derby team, Chicks Ahoy, won the national championships early today. <br> As she is walking into Polly’s Pancake Diner, she is yelling goodbye <br> to her friends outside, and Scott hopes she doesn’t cause a scene since she is <br> always embarrassing him in public.'
+  paragrafhDiez.style.marginLeft = '50px'
+  paragrafhDiez.style.marginTop = '5px'
+  divContainerDos.appendChild(paragrafhDiez)
+  mainContent.appendChild(divContainerDos)
+
+  const paragrafhOnce = document.createElement('h3')
+  paragrafhOnce.innerHTML = '<br>When Not to Use the Present Continuous Tense?'
+  mainContent.appendChild(paragrafhOnce)
+
+  const paragrafhDoce = document.createElement('p')
+  const txtDoce = document.createTextNode('Do not use the present continuous tense with stative verbs. Stative verbs show a state of being that does not show qualities of change. These verbs can stay in the simple present. For example')
+  paragrafhDoce.appendChild(txtDoce)
+  mainContent.appendChild(paragrafhDoce)
+
+  const paragrafhTrece = document.createElement('h3')
+  paragrafhTrece.className = 'align-baseline'
+  const txtTrece = document.createTextNode('Example')
+  paragrafhTrece.appendChild(txtTrece)
+  mainContent.appendChild(paragrafhTrece)
+  
+  const paragrafhCatorce = document.createElement('h5')
+  paragrafhCatorce.className = 'align-baseline text-danger'
+  paragrafhCatorce.innerHTML = 'Incorrect'
+  paragrafhCatorce.style.marginLeft = '80px'
+  paragrafhCatorce.style.marginBottom = '50px'
+  mainContent.appendChild(paragrafhCatorce)
+
+  const divContainerTres = document.createElement('div')
+  divContainerTres.style.display = 'flex'
+  divContainerTres.appendChild(paragrafhCatorce)
+  const paragrafhQuince = document.createElement('p')
+  paragrafhQuince.innerHTML = 'Sarah is being a tall teenager, who loves her food spicy and her sports dangerous.'
+  paragrafhQuince.style.marginLeft = '50px'
+  paragrafhQuince.style.marginBottom = '50px'
+  divContainerTres.appendChild(paragrafhQuince)
+  mainContent.appendChild(divContainerTres)
+  
+  const paragrafhDiezSeis = document.createElement('h5')
+  paragrafhDiezSeis.className = 'align-baseline text-success'
+  paragrafhDiezSeis.innerHTML = 'Correct'
+  paragrafhDiezSeis.style.marginLeft = '80px'
+  paragrafhDiezSeis.style.marginRight = '11px'
+  paragrafhDiezSeis.style.marginBottom = '5px'
+
+  const divContainerCuatro = document.createElement('div')
+  divContainerCuatro.style.display = 'flex'
+  divContainerCuatro.appendChild(paragrafhDiezSeis)
+  const paragrafhDiezSiete = document.createElement('p')
+  paragrafhDiezSiete.innerHTML = 'Aunt Christine prefers the maple walnut pancakes over the banana peanut butter ones that Scott loves.'
+  paragrafhDiezSiete.style.marginLeft = '50px'
+  paragrafhDiezSiete.style.marginBottom = '50px'
+  divContainerCuatro.appendChild(paragrafhDiezSiete)
+  mainContent.appendChild(divContainerCuatro)
+
+  const paragrafhDiezOcho = document.createElement('p')
+  const txtDiezOcho = document.createTextNode('Here, the stative verb to prefer shows opinion, and therefore should not be conjugated into the present continuous. Stative verb categories include emotion (to love), possession (to belong), and thoughts (to recognize), and none of these should use the present continuous form.')
+  paragrafhDiezOcho.appendChild(txtDiezOcho)
+  mainContent.appendChild(paragrafhDiezOcho)
+
+  
 }
 function EverydayExpressions () {
   //Code Here
