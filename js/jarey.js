@@ -175,15 +175,12 @@ btnDragAndDropGame.addEventListener('click', e => {
 function personalInformation () {
   const mainContent = document.getElementById('main-content')
   mainContent.innerHTML = ''
+  const nav = document.getElementById('sexo')
+  nav.innerHTML = 'Personal Information'
+  nav.className = 'text-success'
 
   //Creando titulo
-  const h1PI = document.createElement('h1')
-  h1PI.className = 'text-center text-success'
-  const h1PItext = document.createTextNode('Personal Information')
-  h1PI.classList.add('text-justify')
-  h1PI.classList.add('lh-lg')
-  h1PI.appendChild(h1PItext)
-  mainContent.appendChild(h1PI)
+  
 
   //Creando informacion
   const infoPI = document.createElement('p')
@@ -539,12 +536,18 @@ function personalInformation () {
 function greetings () {
   const mainContent = document.getElementById('main-content')
   mainContent.innerHTML = ''
+  const nav = document.getElementById('sexo')
+  nav.innerHTML = 'Greetings'
+  nav.className = 'text-success'
 
   const h1G = document.createElement('h1')
-  const h1GText = document.createTextNode('Greeting')
+  h1G.className = 'text-center text-success'
+  const h1GText = document.createTextNode('Lets Learn "Greetings"')
 
   h1G.appendChild(h1GText)
   mainContent.appendChild(h1G)
+
+
 }
 
 ////////////////////////////////////////////////////////////////////
@@ -552,6 +555,8 @@ function greetings () {
 function mySelf () {
   const mainContent = document.getElementById('main-content')
   mainContent.innerHTML = ''
+  const nav = document.getElementById('sexo')
+  nav.innerHTML = ''
 
   const h1MySelf = document.createElement('h1')
   const h1MySelf_text = document.createTextNode('Agreguen contenido 3')
@@ -566,6 +571,9 @@ function mySelf () {
 function alphabet () {
   const mainContent = document.getElementById('main-content')
   mainContent.innerHTML = ''
+  const nav = document.getElementById('sexo')
+  nav.innerHTML = 'Alphabet'
+  nav.className = 'text-success'
 
   const h1Alphabet = document.createElement('h1')
   const h1Alphabet_text = document.createTextNode('Agreguen contenido 5')
