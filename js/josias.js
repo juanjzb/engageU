@@ -311,6 +311,14 @@ function checkConversationAnswer(index, answer) {
 
 
 
+function ShortAnswers () {
+  //Code Here
+}
+
+function WHQuestions () {
+  //Code Here
+}
+
 
 
 
