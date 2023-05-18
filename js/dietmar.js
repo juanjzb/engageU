@@ -5,9 +5,10 @@ function Possesions () {
   nav.innerHTML = 'Possesions'
   nav.className = 'text-success'
 
-  // Tipos de texto
+  // Variables globales
   
   const parrafos = 'fw-bold fs-4'
+  const parrafosAlt = 'fw-bold fs-3'
   const tituloEjemplos = 'fw-bold fs-5'
   const ejemplos = 'fst-italic fs-5'
 
@@ -189,7 +190,107 @@ example_titles()
     collectiveNames_example.className = ejemplos
     mainContent.appendChild(collectiveNames_example)
   }
+
+  espacio()
+
+  // Practice
+
+  const practice_title = document.createElement('p')
+  const practice_title_text = document.createTextNode('Practice!')
+  practice_title.appendChild(practice_title_text)
+  practice_title.className = parrafosAlt
+  mainContent.appendChild(practice_title)
+
+  // Formulario
+
+  // Primer contenedor
+  const firstQuestion = document.createElement('div')
+  firstQuestion.className = 'primerDiv'
+  const firstLabel = document.createElement('label')
+  const firstLabel_text = document.createTextNode('-The dog of Julia is a beautiful westie.') // Julia’s dog is a beautiful westie.
+  firstLabel.appendChild(firstLabel_text)
+  firstLabel.for = 'primeraPregunta'
+  const firstInput = document.createElement('input')
+  firstInput.className = 'm-2'
+  firstInput.type = 'text'
+  firstInput.id = 'primeraPregunta'
+  firstInput.name = 'primeraPregunta'
+  firstQuestion.appendChild(firstLabel)
+  firstQuestion.appendChild(firstInput)
+  firstInput.style.display = "block"
+  firstInput.style.margin = "auto"
+  mainContent.appendChild(firstQuestion)
+
+  const secondQuestion = document.createElement('div')
+  secondQuestion.className = 'segundoDiv'
+  const secondLabel = document.createElement('label')
+  const secondLabel_text = document.createTextNode('-The boat of Sailor.') // The sailors’ boat
+  secondLabel.appendChild(secondLabel_text)
+  secondLabel.for = 'segundaPregunta'
+  const secondInput = document.createElement('input')
+  secondInput.className = 'm-2'
+  secondInput.type = 'text'
+  secondInput.id = 'segundaPregunta'
+  secondInput.name = 'segundaPregunta'
+  secondQuestion.appendChild(secondLabel)
+  secondQuestion.appendChild(secondInput)
+  secondInput.style.display = "block"
+  secondInput.style.display = "block"
+  mainContent.appendChild(secondQuestion)
+
+  const thirdQuestion = document.createElement('div')
+  thirdQuestion.className = 'tercerDiv'
+  const thirdLabel = document.createElement('label')
+  const thirdLabel_text = document.createTextNode('-The cousin of my brother-in-Law.') // My brother-in-law’s cousin.
+  thirdLabel.appendChild(thirdLabel_text)
+  thirdLabel.for = 'tercerPregunta'
+  const thirdInput = document.createElement('input')
+  thirdInput.className = 'm-2'
+  thirdInput.type = 'text'
+  thirdInput.id = 'tercerPregunta'
+  thirdInput.name = 'tercerPregunta'
+  thirdQuestion.appendChild(thirdLabel)
+  thirdQuestion.appendChild(thirdInput)
+  thirdInput.style.display = "block"
+  thirdInput.style.margin = "auto"
+  mainContent.appendChild(thirdQuestion)
+
+  const fourthQuestion = document.createElement('div')
+  fourthQuestion.className = 'cuartoDiv'
+  const fourthLabel = document.createElement('label')
+  const fourthLabel_text = document.createTextNode('-The children of Mario and Susan attend primary.') // Mario and Susan’s children attend primary school.
+  fourthLabel.appendChild(fourthLabel_text)
+  fourthLabel.for = 'cuartaPregunta'
+  const fourthInput = document.createElement('input')
+  fourthInput.className = 'm-2'
+  fourthInput.type = 'text'
+  fourthInput.id = 'cuartaPregunta'
+  fourthInput.name = 'cuartaPregunta'
+  fourthQuestion.appendChild(fourthLabel)
+  fourthQuestion.appendChild(fourthInput)
+  fourthInput.style.display = "block"
+  fourthInput.style.margin = "auto"
+  mainContent.appendChild(fourthQuestion)
+
+  const fifthQuestion = document.createElement('div')
+  fifthQuestion.className = 'quintoDiv'
+  const fifthLabel = document.createElement('label')
+  const fifthLabel_text = document.createTextNode('-Rights of the people.') // People’s rights.
+  fifthLabel.appendChild(fifthLabel_text)
+  fifthLabel.for = 'quintaPregunta'
+  const fifthInput = document.createElement('input')
+  fifthInput.className = 'm-2'
+  fifthInput.type = 'text'
+  fifthInput.id = 'quintaPregunta'
+  fifthInput.name = 'quintaPregunta'
+  fifthQuestion.appendChild(fifthLabel)
+  fifthQuestion.appendChild(fifthInput)
+  fifthInput.style.display = "block"
+  fifthInput.style.margin = "auto"
+  mainContent.appendChild(fifthQuestion)
 }
+
+// Classroom Objects
 
 function ClassroomsObjects () {
 	const mainContent = document.getElementById('main-content')
@@ -198,6 +299,101 @@ function ClassroomsObjects () {
   nav.innerHTML = 'Classrooms Object'
   nav.className = 'text-success'
 
+  // Variables globales
+  const parrafos = 'fw-bold fs-4'
+  const parrafosAlt = 'fw-bold fs-3'
+  const titulos = 'fw-bold fs-5'
+  const ejemplos = 'fst-italic fs-5'
+
+  const classroom = document.createElement('p')
+  const classroom_text = document.createTextNode('Los "classroom objects" son objetos que se encuentran en un salón de clases o aula, y que se utilizan para el aprendizaje y la enseñanza. Estos objetos son herramientas y recursos que facilitan el proceso educativo y ayudan a los estudiantes y profesores a llevar a cabo actividades y lecciones. Algunos ejemplos de "classroom objects" son:')
+  classroom.appendChild(classroom_text)
+  classroom.className = parrafos
+  mainContent.appendChild(classroom)
+
+    // Espacios
+
+    function espacio(){
+      const espacios = document.createElement('br')
+      mainContent.appendChild(espacios)
+      return(espacios)
+    }
+
+    // Contenedor de cada imagen y su descripcion
+    const primerObjeto = document.createElement('div')
+    const calculator_img = document.createElement('img')
+    calculator_img.src = './../assets/img/classroomObjects/calculator.jpg'
+    calculator_img.alt = 'Calculator'
+    calculator_img.width = '200'
+    calculator_img.className = 'd-inline'
+    const calculator = document.createElement('p') 
+    const calculator_text = document.createTextNode('Calculator:')
+    calculator.appendChild(calculator_text)
+    calculator.className = titulos
+    primerObjeto.appendChild(calculator)
+    primerObjeto.appendChild(calculator_img)
+    mainContent.appendChild(primerObjeto)
+  
+    espacio()
+  
+    const segundoObjeto = document.createElement('div')
+    const scissor_img = document.createElement('img')
+    scissor_img.src = './../assets/img/classroomObjects/scissors.jpg'
+    scissor_img.alt = 'Scissors'
+    scissor_img.width = '200'
+    scissor_img.className = 'd-inline'
+    const scissor = document.createElement('p') 
+    const scissor_text = document.createTextNode('Scissors:')
+    scissor.appendChild(scissor_text)
+    scissor.className = titulos
+    segundoObjeto.appendChild(scissor)
+    segundoObjeto.appendChild(scissor_img)
+    mainContent.appendChild(segundoObjeto)
+  
+    espacio()
+  
+    const tercerObjeto = document.createElement('div')
+    const eraser_img = document.createElement('img')
+    eraser_img.src = './../assets/img/classroomObjects/eraser.png'
+    eraser_img.alt = 'Scissors'
+    eraser_img.width = '200'
+    const eraser = document.createElement('p') 
+    const eraser_text = document.createTextNode('Eraser:')
+    eraser.appendChild(eraser_text)
+    eraser.className = titulos
+    tercerObjeto.appendChild(eraser)
+    tercerObjeto.appendChild(eraser_img)
+    mainContent.appendChild(tercerObjeto)
+  
+    espacio()
+  
+    const cuartoObjeto = document.createElement('div')
+    const pencils_img = document.createElement('img')
+    pencils_img.src = './../assets/img/classroomObjects/pencils.jpg'
+    pencils_img.alt = 'Pencils'
+    pencils_img.width = '200'
+    const pencil = document.createElement('p') 
+    const pencil_text = document.createTextNode('Pencils:')
+    pencil.appendChild(pencil_text)
+    pencil.className = titulos
+    cuartoObjeto.appendChild(pencil)
+    cuartoObjeto.appendChild(pencils_img)
+    mainContent.appendChild(cuartoObjeto)
+  
+    espacio()
+  
+    const quintoObjeto = document.createElement('div')
+    const glue_img = document.createElement('img')
+    glue_img.src = './../assets/img/classroomObjects/glue.png'
+    glue_img.alt = 'Glue'
+    glue_img.width = '200'
+    const glue = document.createElement('p') 
+    const glue_text = document.createTextNode('Glue:')
+    glue.appendChild(glue_text)
+    glue.className = titulos
+    quintoObjeto.appendChild(glue)
+    quintoObjeto.appendChild(glue_img)
+    mainContent.appendChild(quintoObjeto)
 }
 
 function PersonalItems () {
