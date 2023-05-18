@@ -180,7 +180,7 @@ function QuestionsAndConversations() {
   audio2.src = "./assets/img/Questions and conversations/Multimedia2.mp3"
   audio2.controls = true;
   audio2.style.border = "2px solid black"
-  audio2.style.margin = "0px"
+  audio2.style.marginRight = "2000px"
   document.body.appendChild(audio2)
   mainContent.appendChild(audio2)
 
