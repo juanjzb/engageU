@@ -280,6 +280,8 @@ example_titles()
   mainContent.appendChild(fifthQuestion)
 }
 
+// Classroom Objects
+
 function ClassroomsObjects () {
 	const mainContent = document.getElementById('main-content')
   mainContent.innerHTML = ''
@@ -287,6 +289,101 @@ function ClassroomsObjects () {
   nav.innerHTML = 'Classrooms Object'
   nav.className = 'text-success'
 
+  // Variables globales
+  const parrafos = 'fw-bold fs-4'
+  const parrafosAlt = 'fw-bold fs-3'
+  const titulos = 'fw-bold fs-5'
+  const ejemplos = 'fst-italic fs-5'
+
+  const classroom = document.createElement('p')
+  const classroom_text = document.createTextNode('Los "classroom objects" son objetos que se encuentran en un salón de clases o aula, y que se utilizan para el aprendizaje y la enseñanza. Estos objetos son herramientas y recursos que facilitan el proceso educativo y ayudan a los estudiantes y profesores a llevar a cabo actividades y lecciones. Algunos ejemplos de "classroom objects" son:')
+  classroom.appendChild(classroom_text)
+  classroom.className = parrafos
+  mainContent.appendChild(classroom)
+
+    // Espacios
+
+    function espacio(){
+      const espacios = document.createElement('br')
+      mainContent.appendChild(espacios)
+      return(espacios)
+    }
+
+    // Contenedor de cada imagen y su descripcion
+    const primerObjeto = document.createElement('div')
+    const calculator_img = document.createElement('img')
+    calculator_img.src = './../assets/img/classroomObjects/calculator.jpg'
+    calculator_img.alt = 'Calculator'
+    calculator_img.width = '200'
+    calculator_img.className = 'd-inline'
+    const calculator = document.createElement('p') 
+    const calculator_text = document.createTextNode('Calculator:')
+    calculator.appendChild(calculator_text)
+    calculator.className = titulos
+    primerObjeto.appendChild(calculator)
+    primerObjeto.appendChild(calculator_img)
+    mainContent.appendChild(primerObjeto)
+  
+    espacio()
+  
+    const segundoObjeto = document.createElement('div')
+    const scissor_img = document.createElement('img')
+    scissor_img.src = './../assets/img/classroomObjects/scissors.jpg'
+    scissor_img.alt = 'Scissors'
+    scissor_img.width = '200'
+    scissor_img.className = 'd-inline'
+    const scissor = document.createElement('p') 
+    const scissor_text = document.createTextNode('Scissors:')
+    scissor.appendChild(scissor_text)
+    scissor.className = titulos
+    segundoObjeto.appendChild(scissor)
+    segundoObjeto.appendChild(scissor_img)
+    mainContent.appendChild(segundoObjeto)
+  
+    espacio()
+  
+    const tercerObjeto = document.createElement('div')
+    const eraser_img = document.createElement('img')
+    eraser_img.src = './../assets/img/classroomObjects/eraser.png'
+    eraser_img.alt = 'Scissors'
+    eraser_img.width = '200'
+    const eraser = document.createElement('p') 
+    const eraser_text = document.createTextNode('Eraser:')
+    eraser.appendChild(eraser_text)
+    eraser.className = titulos
+    tercerObjeto.appendChild(eraser)
+    tercerObjeto.appendChild(eraser_img)
+    mainContent.appendChild(tercerObjeto)
+  
+    espacio()
+  
+    const cuartoObjeto = document.createElement('div')
+    const pencils_img = document.createElement('img')
+    pencils_img.src = './../assets/img/classroomObjects/pencils.jpg'
+    pencils_img.alt = 'Pencils'
+    pencils_img.width = '200'
+    const pencil = document.createElement('p') 
+    const pencil_text = document.createTextNode('Pencils:')
+    pencil.appendChild(pencil_text)
+    pencil.className = titulos
+    cuartoObjeto.appendChild(pencil)
+    cuartoObjeto.appendChild(pencils_img)
+    mainContent.appendChild(cuartoObjeto)
+  
+    espacio()
+  
+    const quintoObjeto = document.createElement('div')
+    const glue_img = document.createElement('img')
+    glue_img.src = './../assets/img/classroomObjects/glue.png'
+    glue_img.alt = 'Glue'
+    glue_img.width = '200'
+    const glue = document.createElement('p') 
+    const glue_text = document.createTextNode('Glue:')
+    glue.appendChild(glue_text)
+    glue.className = titulos
+    quintoObjeto.appendChild(glue)
+    quintoObjeto.appendChild(glue_img)
+    mainContent.appendChild(quintoObjeto)
 }
 
 function PersonalItems () {
