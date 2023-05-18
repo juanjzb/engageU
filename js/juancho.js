@@ -5,7 +5,8 @@ function Colors () {
   //Code Here
 }
 function WeatherAndSeasons () {
-  //Code Here
+  const mainContent = document.getElementById('main-content');
+  mainContent.innerHTML = '';
 }
 
 const btnClothing = document.getElementById('btnClothing')
