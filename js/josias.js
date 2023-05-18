@@ -311,30 +311,155 @@ function checkConversationAnswer(index, answer) {
 
 
 
-function ShortAnswers () {
+function ShortAnswers() {
   const mainContent = document.getElementById('main-content');
-  mainContent.innerHTML = '';
+  mainContent.textContent = '';
+
+  const h1 = document.createElement('h1');
+  h1.textContent = 'Unit III- Where are you from?';
+  h1.classList.add('text-center', 'text-primary');
+  mainContent.appendChild(h1);
+
+  const h3 = document.createElement('h3');
+  h3.textContent = 'Short Answers';
+  h3.classList.add('text-center');
+  mainContent.appendChild(h3);
+
+  const p = document.createElement('p');
+  p.innerHTML = 'Decir ‘Yes, I do. / No, I don’t’ en inglés, es una forma más educada de decir: ‘Yes. / No.’ es por eso que las respuestas cortas (Short answers) son comúnmente usadas. Para formar las respuestas cortas, hay que usar la primera palabra de la pregunta. (Este puede ser un verbo auxiliar o una forma del \'verb to be\'.) Usa la forma larga (he does) en respuestas afirmativas (yes). Usa la forma corta (he doesn’t) en respuestas negativas (no). <br><b> EJEMPLOS:</b>';
+  mainContent.appendChild(p);
+
+  const table = document.createElement('table');
+  table.classList.add('table-bordered');
+  mainContent.appendChild(table);
+
+  const thead = document.createElement('thead');
+  table.appendChild(thead);
+
+  const tr1 = document.createElement('tr');
+  thead.appendChild(tr1);
+
+  const th1 = document.createElement('th');
+  th1.textContent = 'Question';
+  tr1.appendChild(th1);
+
+  const th2 = document.createElement('th');
+  th2.textContent = 'Affirmative';
+  tr1.appendChild(th2);
+
+  const th3 = document.createElement('th');
+  th3.textContent = 'Negative';
+  tr1.appendChild(th3);
+
+  const tbody = document.createElement('tbody');
+  table.appendChild(tbody);
+
+  const data = [
+    ['Do we know him?', 'Yes, we do.', 'No, we don’t.'],
+    ['Can she see me?', 'Yes, she can.', 'No, she can’t.'],
+    ['Have they read the book?', 'Yes, they have.', 'No, they haven’t.'],
+    ['Is he hungry?', 'Yes, he is.', 'No, he isn’t.'],
+  ];
+
+  data.forEach((row) => {
+    const tr = document.createElement('tr');
+    tbody.appendChild(tr);
+
+    row.forEach((cell) => {
+      const td = document.createElement('td');
+      td.textContent = cell;
+      tr.appendChild(td);
+    });
+  });
+
+  const a = document.createElement("h4")
+  a.innerHTML = "si 'you' es el sujeto de la pregunta, 'you' debe de ser remplazado por 'I' o 'we'."
+  a.style.margin = "20px"
+  mainContent.appendChild(a)
+
+  const you = document.createElement("p")
+  you.innerHTML = "<b>EJEMPLO: </b> <br> <b>Pregunta: </b>Do you know him? <br> <b>Afirmatva: </b>Yes, I/We do. <br> <b>Negativa: </b>No, I/We don't. "
+  you.style.marginTop = "10px"
+  mainContent.appendChild(you)
+
+
+  const b = document.createElement("h4")
+  b.innerHTML = "Si la pregunta empieza con 'are you', 'are' a veces debe ser remplazado por 'am' "
+  b.style.margin = "20px"
+  mainContent.appendChild(b)
+
+  const me = document.createElement("p")
+  me.innerHTML = "<b>EJEMPLO: </b> <br> <b>Pregunta: </b>Are you hungry? <br> <b>Afirmatva: </b>Yes, I am <br> <b>Negativa: </b>No, I'm not."
+  me.style.marginTop = "10px"
+  mainContent.appendChild(me)
+
+  const wh = document.createElement("h3")
+  const whtext = document.createTextNode("WH Questions")
+  wh.className = "text-center"
+  wh.appendChild(whtext)
+  mainContent.appendChild(wh)
+
+  const whquest = document.createElement('p')
+  whquest.innerHTML = "<b>WH Questions</b> Son un grupo de preguntas que se caracterizan porque en su nombre tienen las letras 'WH' al inicio, excepto por uno de sus casos: <b>How</b>. Las <b>WH Questions </b>son: <br> <br><b>What: </b>qué o cuál <br><b>Why: </b>por qué <br><b>When: </b> cuándo <br><b> Where: </b>dónde <br><b>Who: </b>quíen <br><b>Which: </b>cuál <br><b>How: </b>cómo <br> <br>" 
+  mainContent.appendChild(whquest)
+
+  const structure = document.createElement("h3")
+  const structuretext = document.createTextNode("Estructura de la pregunta")
+  structure.style.marginTop = "20px"
+  structure.appendChild(structuretext)
+  mainContent.appendChild(structure)
+
+  const contentt = document.createElement("p")
+  contentt.innerHTML = "Si el verbo principal de la pregunta es <b>to be, </b>la estructura de la pregunta es la siguiente: "
+  mainContent.appendChild(contentt)
   
-  const h1 = document.createElement('h1')
-  const h1text = document.createTextNode("Unit III- Where are you from?")
-  h1.appendChild(h1text)
-  mainContent.appendChild(h1)
-  h1.className = "text-center text-primary"
+  const whtobeimage = document.createElement("img");
+  whtobeimage.src = "./assets/img/Questions and conversations/no se XD.png";
+  whtobeimage.alt = "unable to load the image";
+  whtobeimage.width = 650
+  whtobeimage.height = 400
+  whtobeimage.style.marginbottom = "10px"
+  mainContent.appendChild(whtobeimage);
 
+  const porejemplo = document.createElement("p")
+  porejemplo.innerHTML = "<b>Por ejemplo:</b> <br> <br> <b>Where is your office?</b> <br> ¿Dónde está tu oficina? <br> <b>How are you</b> <br> ¿Cómo estás? <br> <b>When is you birthday?</b> <br>¿Cuándo es tu cumpleaños? <br> <b>Who is your friend?</b> <br>¿Quién es tu amigo? <br> <br> "
+  porejemplo.style.marginTop = "20px"
+  mainContent.appendChild(porejemplo)
 
-  const header = document.createElement("h3")
-  const headertext = document.createTextNode("Short Answers")
-  header.appendChild(headertext)
-  mainContent.appendChild(header)
-  header.className = "text-center"
+  const verboprincipal = document.createElement("p")
+  verboprincipal.innerHTML = "En caso que el verbo principal de la oración sea <b>cualquier otro verbo</b>, debes usar el verbo to do  como auxiliar interrogativo. La estructura debe ser la siguiente:"
+  mainContent.appendChild(verboprincipal)
 
-  const saying = document.createElement("p")
-  saying.innerHTML = "Decir ‘Yes, I do. / No, I don’t’ en ingles, es una forma más educada de decir: ‘Yes. / No.’  es por eso que las respuestas cortas (Short answers) son comunmente usadas. Para formar las respuestas cortas, hay que usar la primera palabra de la pregunta. (Este puede ser un verbo auxiliar o una forma del 'verb to be'.) Usa la forma larga (he does) en respuestas afirmativas (yes). Usa la forma corta (he doesn’t) en respuestas negativas (no). <br>"
+  const imagenverboprincipal = document.createElement("img")
+  imagenverboprincipal.src = "./assets/img/Questions and conversations/1601316623590-example-wh-question-where.png"
+  imagenverboprincipal.alt = "unable to load the image"
+  imagenverboprincipal.widht = 650
+  imagenverboprincipal.height = 400
+  imagenverboprincipal.style.marginbottom = "10px"
+  mainContent.appendChild(imagenverboprincipal)
 
+  const otroejemplo = document.createElement("p")
+  otroejemplo.innerHTML = "<b>Por ejemplo:</b> <br> <br> <b>What did you do last weekend?</b> <br> ¿Qué hiciste el fin de semana pasado? <br> <b>How does she dance so well?</b> <br> ¿Cómo baila tan bien? <br> <b>Where do you want to lunch? </b> <br>¿Dónde quieres almorzar? <br> <br> <br>En esta infografía podrás ver cómo usar cada una de las Wh Questions: "
+  otroejemplo.style.marginTop = "20px"
+  mainContent.appendChild(otroejemplo)
 
+  const whquestimage = document.createElement("img")
+  whquestimage.src = "./assets/img/Questions and conversations/repello barato de pared.png"
+  whquestimage.alt = "unable to load the image"
+  whquestimage.widht = 700
+  whquestimage.height = 2850
+  whquestimage.style.marginbottom = "10px"
+  whquestimage.style.display = 'block'
+  whquestimage.style.margin = 'auto'
   
-  mainContent.appendChild(saying)
+  mainContent.appendChild(whquestimage)
+
+
 }
+
+
+
+
 
 function WHQuestions () {
   //Code Here
