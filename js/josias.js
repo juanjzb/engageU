@@ -312,7 +312,28 @@ function checkConversationAnswer(index, answer) {
 
 
 function ShortAnswers () {
-  //Code Here
+  const mainContent = document.getElementById('main-content');
+  mainContent.innerHTML = '';
+  
+  const h1 = document.createElement('h1')
+  const h1text = document.createTextNode("Unit III- Where are you from?")
+  h1.appendChild(h1text)
+  mainContent.appendChild(h1)
+  h1.className = "text-center text-primary"
+
+
+  const header = document.createElement("h3")
+  const headertext = document.createTextNode("Short Answers")
+  header.appendChild(headertext)
+  mainContent.appendChild(header)
+  header.className = "text-center"
+
+  const saying = document.createElement("p")
+  saying.innerHTML = "Decir ‘Yes, I do. / No, I don’t’ en ingles, es una forma más educada de decir: ‘Yes. / No.’  es por eso que las respuestas cortas (Short answers) son comunmente usadas. Para formar las respuestas cortas, hay que usar la primera palabra de la pregunta. (Este puede ser un verbo auxiliar o una forma del 'verb to be'.) Usa la forma larga (he does) en respuestas afirmativas (yes). Usa la forma corta (he doesn’t) en respuestas negativas (no). <br>"
+
+
+  
+  mainContent.appendChild(saying)
 }
 
 function WHQuestions () {
