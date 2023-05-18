@@ -549,9 +549,63 @@ function greetings () {
   h1G.innerHTML = 'Lets Learn <b>"Greetings"</b>'
   mainContent.appendChild(h1G)
 
-  const imgDay = document.createElement('img')
-  imgDay.innerHTML = ''
-  
+  const imgDay = document.createElement("img")
+  imgDay.src = "./assets/img/Greetings/day.png"
+  imgDay.alt = "unable to load the image"
+  imgDay.widht = 200
+  imgDay.height = 200
+  imgDay.style.marginbottom = "10px"
+  imgDay.style.display = 'block'
+  imgDay.style.margin = 'auto'
+  imgDay.className = 'd-inline'
+
+  const textDay = document.createElement('h2')
+  textDay.className = 'd-inline'
+  textDay.innerHTML = 'Good Morning'
+
+  const text = document.createElement('h2')
+  text.innerHTML = ' '
+
+  const imgAfternoon = document.createElement("img")
+  imgAfternoon.src = "./assets/img/Greetings/tarde.png"
+  imgAfternoon.alt = "unable to load the image"
+  imgAfternoon.widht = 200
+  imgAfternoon.height = 200
+  imgAfternoon.style.marginbottom = "10px"
+  imgAfternoon.style.display = 'block'
+  imgAfternoon.style.margin = 'auto'
+  imgAfternoon.className = 'd-inline'
+
+  const textafternoon = document.createElement('h2')
+  textafternoon.className = 'd-inline'
+  textafternoon.innerHTML = 'Good afternoon'
+
+  const text2 = document.createElement('h2')
+  text2.innerHTML = ' '
+
+
+  const imgNight = document.createElement("img")
+  imgNight.src = "./assets/img/Greetings/noche.jpg"
+  imgNight.alt = "unable to load the image"
+  imgNight.widht = 200
+  imgNight.height = 200
+  imgNight.style.marginbottom = "10px"
+  imgNight.style.display = 'block'
+  imgNight.style.margin = 'auto'
+  imgNight.className = 'd-inline'
+
+  const textnight = document.createElement('h2')
+  textnight.className = 'd-inline'
+  textnight.innerHTML = 'Good night'
+
+  mainContent.appendChild(imgDay)
+  mainContent.appendChild(textDay)
+  mainContent.appendChild(text)
+  mainContent.appendChild(imgAfternoon)
+  mainContent.appendChild(textafternoon)
+  mainContent.appendChild(text2)
+  mainContent.appendChild(imgNight)
+  mainContent.appendChild(textnight)
 }
 
 ////////////////////////////////////////////////////////////////////
@@ -585,6 +639,7 @@ function alphabet () {
   h1Alphabet.appendChild(h1Alphabet_text)
   mainContent.appendChild(h1Alphabet)
 }
+/////////////////////////////////////////////////////////////////////////
 
 const btnPersonalInformation = document.getElementById('btnPersonalInformation')
 const btnGreetings = document.getElementById('btnGreetings')
