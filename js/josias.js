@@ -324,17 +324,7 @@ function checkConversationAnswer(index, answer) {
 
 
 
-function ShortAnswers () {
-  const nav = document.getElementById('sexo')
-  nav.innerHTML = 'Short Answer'
-  nav.className = 'text-success'
-}
 
-function WHQuestions () {
-  const nav = document.getElementById('sexo')
-  nav.innerHTML = 'Greetings'
-  nav.className = 'text-success'
-}
 
 const btnQuestionsAndConversations = document.getElementById(
   'btnQuestionsAndConversations'
