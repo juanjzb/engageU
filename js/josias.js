@@ -51,7 +51,7 @@ function QuestionsAndConversations() {
     { question: 'Seoul and Daejeon are in _______.', answer: 'South Korea' },
     { question: 'Buenos Aires is in _______.', answer: 'Argentina' },
     { question: 'Vancouver and Ottawa are in _______.', answer: 'Canada' },
-    { question: 'Istanbul is in _______.', answer: 'Turkey' },
+    { question: 'Istanbul is in _____.', answer: 'Turkey' },
   ];
 
   const activityList = document.createElement('ol');
