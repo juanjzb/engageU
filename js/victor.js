@@ -251,7 +251,6 @@ function EverydayExpressions () {
   mainContent.innerHTML = ''
   //Code Here
 
-
   const parrafoUno = document.createElement('p')
   parrafoUno.innerHTML = 'In the case of "everyday expressions", there is no strict formula for their creation, since they are phrases and expressions that arise naturally in the context of informal oral communication. However, there are some common characteristics that can be taken into account when using these types of expressions: <br>'
   mainContent.appendChild(parrafoUno)
@@ -283,6 +282,7 @@ function EverydayExpressions () {
   mainContent.appendChild(parrafoSeis)
 
   // Meterle el contenido al bloque anterior. 
+  // Investigar como meter un audio / video (Ver codigo de josias)
 }
 function ShortQuestions () {
   const nav = document.getElementById('sexo')
