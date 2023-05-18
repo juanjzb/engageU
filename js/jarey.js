@@ -180,7 +180,11 @@ function personalInformation () {
   nav.className = 'text-success'
 
   //Creando titulo
-  
+  const h1PI = document.createElement('h1')
+  h1PI.className = 'text-center text-success'
+  h1PI.innerHTML = 'Lets learn <b>Personal Information</b>'
+
+  mainContent.appendChild(h1PI)
 
   //Creando informacion
   const infoPI = document.createElement('p')
@@ -542,12 +546,12 @@ function greetings () {
 
   const h1G = document.createElement('h1')
   h1G.className = 'text-center text-success'
-  const h1GText = document.createTextNode('Lets Learn "Greetings"')
-
-  h1G.appendChild(h1GText)
+  h1G.innerHTML = 'Lets Learn <b>"Greetings"</b>'
   mainContent.appendChild(h1G)
 
-
+  const imgDay = document.createElement('img')
+  imgDay.innerHTML = ''
+  
 }
 
 ////////////////////////////////////////////////////////////////////
