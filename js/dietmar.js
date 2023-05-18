@@ -207,7 +207,7 @@ example_titles()
   const firstQuestion = document.createElement('div')
   firstQuestion.className = 'primerDiv'
   const firstLabel = document.createElement('label')
-  const firstLabel_text = document.createTextNode('The dog of Julia is a beautiful westie.') // Julia’s dog is a beautiful westie.
+  const firstLabel_text = document.createTextNode('-The dog of Julia is a beautiful westie.') // Julia’s dog is a beautiful westie.
   firstLabel.appendChild(firstLabel_text)
   firstLabel.for = 'primeraPregunta'
   const firstInput = document.createElement('input')
@@ -217,12 +217,14 @@ example_titles()
   firstInput.name = 'primeraPregunta'
   firstQuestion.appendChild(firstLabel)
   firstQuestion.appendChild(firstInput)
+  firstInput.style.display = "block"
+  firstInput.style.margin = "auto"
   mainContent.appendChild(firstQuestion)
 
   const secondQuestion = document.createElement('div')
   secondQuestion.className = 'segundoDiv'
   const secondLabel = document.createElement('label')
-  const secondLabel_text = document.createTextNode('The boat of Sailor.') // The sailors’ boat
+  const secondLabel_text = document.createTextNode('-The boat of Sailor.') // The sailors’ boat
   secondLabel.appendChild(secondLabel_text)
   secondLabel.for = 'segundaPregunta'
   const secondInput = document.createElement('input')
@@ -232,12 +234,14 @@ example_titles()
   secondInput.name = 'segundaPregunta'
   secondQuestion.appendChild(secondLabel)
   secondQuestion.appendChild(secondInput)
+  secondInput.style.display = "block"
+  secondInput.style.display = "block"
   mainContent.appendChild(secondQuestion)
 
   const thirdQuestion = document.createElement('div')
   thirdQuestion.className = 'tercerDiv'
   const thirdLabel = document.createElement('label')
-  const thirdLabel_text = document.createTextNode('The cousin of my brother-in-Law.') // My brother-in-law’s cousin.
+  const thirdLabel_text = document.createTextNode('-The cousin of my brother-in-Law.') // My brother-in-law’s cousin.
   thirdLabel.appendChild(thirdLabel_text)
   thirdLabel.for = 'tercerPregunta'
   const thirdInput = document.createElement('input')
@@ -247,12 +251,14 @@ example_titles()
   thirdInput.name = 'tercerPregunta'
   thirdQuestion.appendChild(thirdLabel)
   thirdQuestion.appendChild(thirdInput)
+  thirdInput.style.display = "block"
+  thirdInput.style.margin = "auto"
   mainContent.appendChild(thirdQuestion)
 
   const fourthQuestion = document.createElement('div')
   fourthQuestion.className = 'cuartoDiv'
   const fourthLabel = document.createElement('label')
-  const fourthLabel_text = document.createTextNode('The children of Mario and Susan attend primary.') // Mario and Susan’s children attend primary school.
+  const fourthLabel_text = document.createTextNode('-The children of Mario and Susan attend primary.') // Mario and Susan’s children attend primary school.
   fourthLabel.appendChild(fourthLabel_text)
   fourthLabel.for = 'cuartaPregunta'
   const fourthInput = document.createElement('input')
@@ -262,12 +268,14 @@ example_titles()
   fourthInput.name = 'cuartaPregunta'
   fourthQuestion.appendChild(fourthLabel)
   fourthQuestion.appendChild(fourthInput)
+  fourthInput.style.display = "block"
+  fourthInput.style.margin = "auto"
   mainContent.appendChild(fourthQuestion)
 
   const fifthQuestion = document.createElement('div')
   fifthQuestion.className = 'quintoDiv'
   const fifthLabel = document.createElement('label')
-  const fifthLabel_text = document.createTextNode('Rights of the people.') // People’s rights.
+  const fifthLabel_text = document.createTextNode('-Rights of the people.') // People’s rights.
   fifthLabel.appendChild(fifthLabel_text)
   fifthLabel.for = 'quintaPregunta'
   const fifthInput = document.createElement('input')
@@ -277,6 +285,8 @@ example_titles()
   fifthInput.name = 'quintaPregunta'
   fifthQuestion.appendChild(fifthLabel)
   fifthQuestion.appendChild(fifthInput)
+  fifthInput.style.display = "block"
+  fifthInput.style.margin = "auto"
   mainContent.appendChild(fifthQuestion)
 }
 

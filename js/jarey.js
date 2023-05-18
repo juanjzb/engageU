@@ -22,7 +22,34 @@ function createMainContent () {
   bienvenida.appendChild(bienvenida_text)
   div.appendChild(bienvenida)
   mainContent.appendChild(bienvenida)
+
+  const imagen = document.createElement("img");
+  imagen.src = "./assets/img/Questions and conversations/1.png";
+  imagen.alt = "unable to load the image";
+  imagen.style.border = "3px solid black";
+  imagen.height = 400
+  imagen.width = 600
+  imagen.style.display = 'block'
+  imagen.style.margin = 'auto'
+  imagen.style.marginBottom = "20px"
+  mainContent.appendChild(imagen);
+
+  const imagen2 = document.createElement("img");
+  imagen2.src = "./assets/img/Questions and conversations/2.png";
+  imagen2.alt = "unable to load the image";
+  imagen2.style.border = "3px solid black";
+  imagen2.height = 400
+  imagen2.width = 600
+  imagen2.style.display = 'block'
+  imagen2.style.margin = 'auto'
+  imagen2.style.marginbottom = "20px";
+  mainContent.appendChild(imagen2);
+  
+
+
+
 }
+
 
 const btnHome = document.getElementById('btnHome')
 
