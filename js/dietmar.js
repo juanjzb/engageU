@@ -8,6 +8,7 @@ function Possesions () {
   // Tipos de texto
   
   const parrafos = 'fw-bold fs-4'
+  const parrafosAlt = 'fw-bold fs-3'
   const tituloEjemplos = 'fw-bold fs-5'
   const ejemplos = 'fst-italic fs-5'
 
