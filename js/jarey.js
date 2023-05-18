@@ -654,7 +654,7 @@ function greetings () {
 
   const listaG2 = document.createElement('ul')
   listaG2.className = 'fs-4'
-  listaG2.innerHTML = '<li>Hi: Hola</li><li>Hey!: Hola </li><li>How’s it going?: ¿Cómo te ha ido?, ¿Cómo te está yendo?</li><li>How are you all?: ¿Cómo están todos?</li><li>How are you doing?: ¿Cómo vas/van?</li>'
+  listaG2.innerHTML = '<li>Hi: Hola</li><li>Hey!: Hola </li><li>How’s it going?: ¿Cómo te ha ido?, ¿Cómo te está yendo?</li><li>How are you all?: ¿Cómo están todos?</li><li>How are you doing?: ¿Cómo vas/van?.</li>'
 
   mainContent.appendChild(listaG2)
 }
