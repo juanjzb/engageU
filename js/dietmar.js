@@ -1,6 +1,9 @@
 function Possesions () {
 	const mainContent = document.getElementById('main-content')
   mainContent.innerHTML = ''
+  const nav = document.getElementById('sexo')
+  nav.innerHTML = 'Possesions'
+  nav.className = 'text-success'
 
   // Tipos de texto
   
@@ -191,12 +194,19 @@ example_titles()
 function ClassroomsObjects () {
 	const mainContent = document.getElementById('main-content')
   mainContent.innerHTML = ''
+  const nav = document.getElementById('sexo')
+  nav.innerHTML = 'Classrooms Object'
+  nav.className = 'text-success'
 
 }
 
 function PersonalItems () {
 	const mainContent = document.getElementById('main-content')
   mainContent.innerHTML = ''
+  const nav = document.getElementById('sexo')
+  nav.innerHTML = 'Personal Items'
+  nav.className = 'text-success'
+
 }
 
 const btnPossesions = document.getElementById('btnPossesions')

@@ -1,6 +1,9 @@
 function QuestionsAndConversations() {
   const mainContent = document.getElementById('main-content');
   mainContent.innerHTML = '';
+  const nav = document.getElementById('sexo')
+  nav.innerHTML = 'Questions and conversations'
+  nav.className = 'text-success'
   
   const h1 = document.createElement('h1');
   const h1_text = document.createTextNode('Unit III- Where are you from?');
@@ -322,11 +325,15 @@ function checkConversationAnswer(index, answer) {
 
 
 function ShortAnswers () {
-  //Code Here
+  const nav = document.getElementById('sexo')
+  nav.innerHTML = 'Short Answer'
+  nav.className = 'text-success'
 }
 
 function WHQuestions () {
-  //Code Here
+  const nav = document.getElementById('sexo')
+  nav.innerHTML = 'Greetings'
+  nav.className = 'text-success'
 }
 
 const btnQuestionsAndConversations = document.getElementById(

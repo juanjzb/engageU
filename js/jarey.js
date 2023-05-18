@@ -175,15 +175,12 @@ btnDragAndDropGame.addEventListener('click', e => {
 function personalInformation () {
   const mainContent = document.getElementById('main-content')
   mainContent.innerHTML = ''
+  const nav = document.getElementById('sexo')
+  nav.innerHTML = 'Personal Information'
+  nav.className = 'text-success'
 
   //Creando titulo
-  const h1PI = document.createElement('h1')
-  h1PI.className = 'text-center text-success'
-  const h1PItext = document.createTextNode('Personal Information')
-  h1PI.classList.add('text-justify')
-  h1PI.classList.add('lh-lg')
-  h1PI.appendChild(h1PItext)
-  mainContent.appendChild(h1PI)
+  
 
   //Creando informacion
   const infoPI = document.createElement('p')
@@ -267,7 +264,6 @@ function personalInformation () {
   const age2PI = document.createElement('p')
   age2PI.className = 'fs-4'
   age2PI.innerHTML = 'I am <input type="number"> years old - Tengo <input type="number"> años'
-  const agePItext2 = document.createTextNode('')
 
   const age3PI = document.createElement('p')
   age3PI.className = 'fs-4'
@@ -280,7 +276,6 @@ function personalInformation () {
   const age5PI = document.createElement('p')
   age5PI.className = 'fs-4'
   age5PI.innerHTML = 'My birthday is <input type="text"> / My date of birth is <input type="text"> – Mi cumpleaños / fecha de nacimiento es <input type="text">'
-  // const agePItext5 = document.createTextNode('')
 
   const age6PI = document.createElement('p')
   age6PI.className = 'fs-4'
@@ -289,22 +284,16 @@ function personalInformation () {
   const age7PI = document.createElement('p')
   age7PI.className = 'fs-4'
   age7PI.innerHTML = 'I was born in <input type="text"> – Nací en <input type="text"> / Soy de <input type="text">'
-  const agePItext7 = document.createTextNode('')
 
   const age8PI = document.createElement('p')
   age8PI.className = 'fs-4'
   age8PI.innerHTML = 'My place of birth is <input type="text"> – Mi lugar de nacimiento es <input type="text"> '
-  const agePItext8 = document.createTextNode('')
 
   
   agePI.appendChild(agePItext)
-  age2PI.appendChild(agePItext2)
   age3PI.appendChild(agePItext3)
   age4PI.appendChild(agePItext4)
-  // age5PI.appendChild(agePItext5)
   age6PI.appendChild(agePItext6)
-  age7PI.appendChild(agePItext7)
-  age8PI.appendChild(agePItext8)
   divAge.appendChild(agePI)
   divAge.appendChild(age2PI)
   divAge.appendChild(age3PI)
@@ -441,10 +430,10 @@ function personalInformation () {
   const OtherPI = document.createElement('p')
   OtherPI.className = 'fs-4'
   const OtherPItext = document.createTextNode('Where are you from? – ¿De dónde es/eres?')
+
   const Other2PI = document.createElement('p')
   Other2PI.className = 'fs-4'
   Other2PI.innerHTML = 'I’m/ I am from <input type="text"> – Soy de <input type="text">'  
-  const OtherPItext2 = document.createTextNode('')
 
   const Other3PI = document.createElement('p')
   Other3PI.className = 'fs-4'
@@ -457,7 +446,6 @@ function personalInformation () {
   const Other5PI = document.createElement('p')
   Other5PI.className = 'fs-4'
   Other5PI.innerHTML = 'My address is <input type="text"> / I live in <input type="text">– Mi dirección es <input type="text"> / Vivo en <input type="text">'
-  const OtherPItext5 = document.createTextNode('')
 
   const Other6PI = document.createElement('p')
   Other6PI.className = 'fs-4'
@@ -470,7 +458,6 @@ function personalInformation () {
   const Other8PI = document.createElement('p')
   Other8PI.className = 'fs-4'
   Other8PI.innerHTML = 'My address is <input type="text"> / I live in <input type="text">– Mi dirección es <input type="text"> / Vivo en <input type="text">'
-  const OtherPItext8 = document.createTextNode('')
   
   const Other9PI = document.createElement('p')
   Other9PI.className = 'fs-4'
@@ -483,7 +470,6 @@ function personalInformation () {
   const Other11PI = document.createElement('p')
   Other11PI.className = 'fs-4'
   Other11PI.innerHTML = 'My nationality is <input type="text"> – Mi nacionalidad es <input type="text">'
-  const OtherPItext11 = document.createTextNode('')
 
   const Other12PI = document.createElement('p')
   Other12PI.className = 'fs-4'
@@ -496,7 +482,6 @@ function personalInformation () {
   const Other14PI = document.createElement('p')
   Other14PI.className = 'fs-4'
   Other14PI.innerHTML = 'My telephone number is <input type="text"> – Mi número de teléfono es  <input type="text">'
-  const OtherPItext14 = document.createTextNode('')
 
   const Other15PI = document.createElement('p')
   Other15PI.className = 'fs-4'
@@ -504,21 +489,15 @@ function personalInformation () {
 
   
   OtherPI.appendChild(OtherPItext)
-  Other2PI.appendChild(OtherPItext2)
   Other3PI.appendChild(OtherPItext3)
   Other4PI.appendChild(OtherPItext4)
-  Other5PI.appendChild(OtherPItext5)
   Other6PI.appendChild(OtherPItext6)
   Other7PI.appendChild(OtherPItext7)
-  Other8PI.appendChild(OtherPItext8)
   Other9PI.appendChild(OtherPItext9)
   Other10PI.appendChild(OtherPItext10)
-  Other11PI.appendChild(OtherPItext11)
   Other12PI.appendChild(OtherPItext12)
   Other13PI.appendChild(OtherPItext13)
-  Other14PI.appendChild(OtherPItext14)
   Other15PI.appendChild(OtherPItext15)
-
   divOther.appendChild(OtherPI)
   divOther.appendChild(Other2PI)
   divOther.appendChild(Other3PI)
@@ -557,12 +536,18 @@ function personalInformation () {
 function greetings () {
   const mainContent = document.getElementById('main-content')
   mainContent.innerHTML = ''
+  const nav = document.getElementById('sexo')
+  nav.innerHTML = 'Greetings'
+  nav.className = 'text-success'
 
   const h1G = document.createElement('h1')
-  const h1GText = document.createTextNode('Agreguen contenido 2')
+  h1G.className = 'text-center text-success'
+  const h1GText = document.createTextNode('Lets Learn "Greetings"')
 
   h1G.appendChild(h1GText)
   mainContent.appendChild(h1G)
+
+
 }
 
 ////////////////////////////////////////////////////////////////////
@@ -570,6 +555,8 @@ function greetings () {
 function mySelf () {
   const mainContent = document.getElementById('main-content')
   mainContent.innerHTML = ''
+  const nav = document.getElementById('sexo')
+  nav.innerHTML = ''
 
   const h1MySelf = document.createElement('h1')
   const h1MySelf_text = document.createTextNode('Agreguen contenido 3')
@@ -578,25 +565,15 @@ function mySelf () {
   mainContent.appendChild(h1MySelf)
 }
 
-/////////////////////////////////////////////////////////////////////
-/* Boton de Names And Titles */
-function namesAndTitles () {
-  const mainContent = document.getElementById('main-content')
-  mainContent.innerHTML = ''
-
-  const h1NamesAndTtiles = document.createElement('h1')
-  const h1NamesAndTtiles_text = document.createTextNode('Agreguen contenido 4')
-
-  h1NamesAndTtiles.appendChild(h1NamesAndTtiles_text)
-  mainContent.appendChild(h1NamesAndTtiles)
-}
-
 ///////////////////////////////////////////////////////////////////////
 /* Boton de Aplphabet */
 
 function alphabet () {
   const mainContent = document.getElementById('main-content')
   mainContent.innerHTML = ''
+  const nav = document.getElementById('sexo')
+  nav.innerHTML = 'Alphabet'
+  nav.className = 'text-success'
 
   const h1Alphabet = document.createElement('h1')
   const h1Alphabet_text = document.createTextNode('Agreguen contenido 5')

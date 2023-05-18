@@ -1,12 +1,9 @@
 function PresentContinuous () {
   const mainContent = document.getElementById('main-content')
   mainContent.innerHTML = ''
-
-  const h1 = document.createElement('h1')
-  h1.className = 'text-center text-success'
-  const textH1 = document.createTextNode('Present Continuous')
-  h1.appendChild(textH1)
-  mainContent.appendChild(h1)
+  const nav = document.getElementById('sexo')
+  nav.innerHTML = 'Present Continous'
+  nav.className = 'text-success'
 
   const paragrafh = document.createElement('p')
   const txtUno = document.createTextNode('The present continuous verb tense indicates that an action or condition is happening now, frequently,and may continue into the future. It generally refers to situations or actions that are being carried out at the moment and, as in Spanish, learning this tense is essential to have fluency and expression in any conversation in English.')
@@ -246,18 +243,54 @@ function resetExercise() {
   
 
 
-
-
-
-
-
-
-
 function EverydayExpressions () {
+  const nav = document.getElementById('sexo')
+  nav.innerHTML = 'Everyday Expressions'
+  nav.className = 'text-success'
+  const mainContent = document.getElementById('main-content')
+  mainContent.innerHTML = ''
   //Code Here
+
+  const parrafoUno = document.createElement('p')
+  parrafoUno.innerHTML = 'In the case of "everyday expressions", there is no strict formula for their creation, since they are phrases and expressions that arise naturally in the context of informal oral communication. However, there are some common characteristics that can be taken into account when using these types of expressions: <br>'
+  mainContent.appendChild(parrafoUno)
+  
+  const parrafoDos = document.createElement('h4')
+  parrafoDos.className = 'align-baseline'
+  parrafoDos.style.marginLeft = '30px'
+  const textDos = document.createTextNode('Informality: ')
+  parrafoDos.appendChild(textDos)
+  mainContent.appendChild(parrafoDos)
+
+  const divContainerCinco = document.createElement('div')
+  divContainerCinco.style.display = 'flex'
+  divContainerCinco.appendChild(parrafoDos)
+  const parrafoTres = document.createElement('p')
+  parrafoTres.innerHTML = "Everyday expressions are usually informal and colloquial, so they don't follow <br> strict grammar rules or have a formal tone. They are very simple phrases <br> to satisfy specific needs. <br>"
+  parrafoTres.style.marginLeft = '40px'
+  parrafoTres.style.marginTop = '3px'
+  parrafoTres.style.marginBottom = '20px'
+  divContainerCinco.appendChild(parrafoTres)
+  mainContent.appendChild(divContainerCinco)
+  
+  const parrafoSeis = document.createElement('h4')
+  parrafoSeis.className = 'align-baseline'
+  parrafoSeis.style.marginLeft = '30px'
+  parrafoSeis.style.marginTop = '30px'
+  const textTres = document.createTextNode('Contextuality: ')
+  parrafoSeis.appendChild(textTres)
+  mainContent.appendChild(parrafoSeis)
+
+  // Meterle el contenido al bloque anterior. 
+  // Investigar como meter un audio / video (Ver codigo de josias)
 }
 function ShortQuestions () {
-  //Code Here
+  const nav = document.getElementById('sexo')
+  nav.innerHTML = 'Short questions'
+  nav.className = 'text-success'
+  const mainContent = document.getElementById('main-content')
+  mainContent.innerHTML = ''
+  //Code here
 }
 
 
