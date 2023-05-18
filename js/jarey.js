@@ -677,15 +677,15 @@ btnGreetings.addEventListener('click', e => {
   greetings()
 })
 
-btnIntroduceMySelf.addEventListener('click', e => {
-  e.preventDefault()
-  mySelf()
-})
+// btnIntroduceMySelf.addEventListener('click', e => {
+//   e.preventDefault()
+//   mySelf()
+// })
 
-btnNamesAndTitles.addEventListener('click', e => {
-  e.preventDefault()
-  namesAndTitles()
-})
+// btnNamesAndTitles.addEventListener('click', e => {
+//   e.preventDefault()
+//   namesAndTitles()
+// })
 
 btnAlphabet.addEventListener('click', e => {
   e.preventDefault()
