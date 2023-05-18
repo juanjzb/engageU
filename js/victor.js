@@ -191,10 +191,7 @@ function PresentContinuous () {
       checkAnswer(index, exercise.answers, input.value.trim())
       input.disabled = true; // Deshabilita el input para evitar múltiples respuestas
     }
-  const resetbutton = document.createElement('button')
-  resetbutton.setAttribute("type", "reset");
-  document.body.appendChild(resetbutton)
-  mainContent.appendChild(resetbutton)
+  
   })
 
   mainyoContent.appendChild(exerciseDiv)
@@ -454,7 +451,10 @@ function EverydayExpressions () {
   // Investigar como meter un audio / video (Ver codigo de josias)
 }
 
-
+/**
+ * Tercer tema ----------------------------------------------------------------------------------
+ * ++++++++++++ ----------------------------------------------------------------------------------
+ */
 
 function ShortQuestions () {
   const nav = document.getElementById('sexo')
@@ -463,6 +463,184 @@ function ShortQuestions () {
   const mainContent = document.getElementById('main-content')
   mainContent.innerHTML = ''
   //Code here
+
+  const questionConcept = document.createElement('p')
+  const txtQuestion =  document.createTextNode('"Short questions" or "short interrogative sentences" are short, direct questions used to quickly and concisely request information or confirmation. Unlike full questions, "short questions" tend to use a more simplified structure and may omit certain grammatical elements.')
+  questionConcept.appendChild(txtQuestion)
+  mainContent.appendChild(questionConcept)
+
+  const paragrafhDos = document.createElement('h3')
+  paragrafhDos.innerHTML = '<br>The ShortQuestions Formula:'
+  mainContent.appendChild(paragrafhDos)
+
+  const paragrafhTres = document.createElement('p')
+  const txtTres = document.createTextNode('Verb + subject + inversion')
+  paragrafhTres.appendChild(txtTres)
+  mainContent.appendChild(paragrafhTres)
+  
+  const loco = document.createElement('p')
+  const txtLoco =  document.createTextNode('In other words, the typical order of affirmative sentence structure (subject + verb) is reversed to formulate the question. Here are some examples to illustrate the formula: ')
+  loco.appendChild(txtLoco)
+  mainContent.appendChild(loco)
+
+  const parrafoDieNueve = document.createElement('h4')
+  parrafoDieNueve.className = 'align-baseline'
+  parrafoDieNueve.innerHTML = '<br>  Examples '
+  parrafoDieNueve.style.marginRight = '10px'
+  parrafoDieNueve.style.marginLeft = '30px'
+  parrafoDieNueve.style.marginTop = '5px'
+  parrafoDieNueve.style.whiteSpace = 'nowrap'
+  mainContent.appendChild(parrafoDieNueve)
+
+  const divContainerOnce = document.createElement('div')
+  divContainerOnce.style.display = 'flex'
+  divContainerOnce.appendChild(parrafoDieNueve)
+  const parrafoDieUno = document.createElement('p')
+  parrafoDieUno.innerHTML = '<br>1. You like pizza. (Afirmación) <br>Do you like pizza? (Pregunta corta) <br><br> 2. He is coming. (Afirmación) <br> Is he coming? (Pregunta corta) <br><br> 3. They have finished. (Afirmación) <br> Have they finished? (Pregunta corta) <br><br> 4. We will go to the party. (Afirmación) <br> Will we go to the party? (Pregunta corta) <br><br> 5. She can swim. (Afirmación)Can she swim? (Pregunta corta) <br> '
+  parrafoDieUno.style.marginLeft = '5px'
+  parrafoDieUno.style.marginRight = '5px'
+  parrafoDieUno.style.marginTop = '60px'
+  parrafoDieUno.style.marginBottom = '30px'
+  divContainerOnce.appendChild(parrafoDieUno)
+  mainContent.appendChild(divContainerOnce)
+
+  const paragrafhIno = document.createElement('p')
+  const txtIno = document.createTextNode('"Short questions" or "short interrogative sentences" are short, direct questions used to quickly and concisely request information or confirmation. Unlike full questions, "short questions" tend to use a more simplified structure and may omit certain grammatical elements.')
+  paragrafhIno.appendChild(txtIno)
+  mainContent.appendChild(paragrafhIno)
+
+  const paragroUno = document.createElement('p')
+  paragroUno.innerHTML = '<br>It is important to note that there are some exceptions and variations in the construction of questions depending on the type of verb or the specific grammatical structure. However, in general, the formula mentioned above is applicable for most of the "short questions" in English. <br> <br> These short questions are very common in everyday conversation and are used to get quick answers or confirm information. Its simple structure allows efficient and direct communication.'
+  mainContent.appendChild(paragroUno)
+
+  const parrafoDie = document.createElement('h4')
+  parrafoDie.className = 'align-baseline'
+  parrafoDie.innerHTML = '<br> Inversion of the verb and the subject:  '
+  parrafoDie.style.marginRight = '10px'
+  parrafoDie.style.marginTop = '5px'
+  parrafoDie.style.whiteSpace = 'nowrap'
+  mainContent.appendChild(parrafoDie)
+
+  const respuest = document.createElement('p')
+  respuest.innerHTML = '<br>The main characteristic of "short questions" is the inversion of the typical subject-verb order in an affirmative sentence. When formulating a short question, the verb is placed before the subject. For example: "You like pizza" (affirmation) becomes "Do you like pizza?" (short question).'
+  mainContent.appendChild(respuest)
+
+  const xd = document.createElement('h4')
+  xd.className = 'align-baseline'
+  xd.innerHTML = '<br> Auxiliary verbs: '
+  xd.style.marginRight = '1opx'
+  xd.style.marginTop = '5x'
+  xd.style.whiteSpace = 'nowrap'
+  mainContent.appendChild(xd)
+
+  const respuestUno = document.createElement('p')
+  respuestUno.innerHTML = '<br>In many cases, an auxiliary verb is used in the short question. The most common auxiliary verbs are "do", "be" and "have". The auxiliary verb is placed at the beginning of the question followed by the subject and then the main verb in base form (without conjugation). For example: "He is coming" (affirmation) becomes "Is he coming?" (short question).'
+  mainContent.appendChild(respuestUno)
+
+  const xdUno = document.createElement('h4')
+  xdUno.className = 'align-baseline'
+  xdUno.innerHTML = '<br> Modal verbs: '
+  xdUno.style.marginRight = '1opx'
+  xdUno.style.marginTop = '5x'
+  xdUno.style.whiteSpace = 'nowrap'
+  mainContent.appendChild(xdUno)
+
+  const respuestDos = document.createElement('p')
+  respuestDos.innerHTML = '<br>Modal verbs, such as "can", "will", "should", among others, are also used in the formation of "short questions". They follow the same basic structure of inversion of the verb and the subject. For example: "She can swim" (affirmation) becomes "Can she swim?" (short question).'
+  mainContent.appendChild(respuestDos)
+
+  const xdDos = document.createElement('h4')
+  xdDos.className = 'align-baseline'
+  xdDos.innerHTML = '<br> Questions with "wh-words": '
+  xdDos.style.marginRight = '1opx'
+  xdDos.style.marginTop = '5x'
+  xdDos.style.whiteSpace = 'nowrap'
+  mainContent.appendChild(xdDos)
+
+  const respuestTres = document.createElement('p')
+  respuestTres.innerHTML = '<br> Questions using question words such as "what," "where," "when," "who," "why," and "how" follow a similar structure. The question word is placed at the beginning of the question followed by the auxiliary verb and then the subject. For example: "You went to the party" (statement) becomes "Where did you go to the party?" (short question).'
+  mainContent.appendChild(respuestTres)
+
+  const xdTres = document.createElement('h4')
+  xdTres.className = 'align-baseline'
+  xdTres.innerHTML = '<br> Answers to the "short questions" : '
+  xdTres.style.marginRight = '1opx'
+  xdTres.style.marginTop = '5x'
+  xdTres.style.whiteSpace = 'nowrap'
+  mainContent.appendChild(xdTres)
+
+  const respuestFor = document.createElement('p')
+  respuestFor.innerHTML = '<br>The answers to the short questions can be "yes" or "no", or they can include additional information. The answer should be concise and direct. For example: "Do you like pizza?" (short question) may receive answers such as "Yes, I do" or "No, I don´t" .<br><br>'
+  mainContent.appendChild(respuestFor)
+
+  const xdFor = document.createElement('h4')
+  xdFor.className = 'align-baseline'
+  xdFor.innerHTML = '<br> Main verbs without auxiliaries : '
+  xdFor.style.marginRight = '1opx'
+  xdFor.style.marginTop = '5x'
+  xdFor.style.whiteSpace = 'nowrap'
+  mainContent.appendChild(xdFor)
+ 
+  const respuestFive = document.createElement('p')
+  respuestFive.innerHTML = '<br>In some cases, main verbs without auxiliaries can also be reversed to form short questions. In this case, the main verb is placed at the beginning of the question, followed by the subject. For example: "He plays tennis" (statement) becomes "Plays he tennis?" (short question).<br><br>'
+  mainContent.appendChild(respuestFive)
+
+  const xdFive = document.createElement('h4')
+  xdFive.className = 'align-baseline'
+  xdFive.innerHTML = '<br> Negative answers to affirmative questions : '
+  xdFive.style.marginRight = '1opx'
+  xdFive.style.marginTop = '5x'
+  xdFive.style.whiteSpace = 'nowrap'
+  mainContent.appendChild(xdFive)
+
+  const respuestSix = document.createElement('p')
+  respuestSix.innerHTML = '<br>When a short question is answered in the affirmative, the negative form of the auxiliary or modal verb is used in the answer. For example: "Do you like coffee?" (Do you like coffee?) may receive the response "No, I don´t" (No, I don´t like it).<br><br>'
+  mainContent.appendChild(respuestSix)
+
+  const xdSix = document.createElement('h4')
+  xdSix.className = 'align-baseline'
+  xdSix.innerHTML = '<br> Use of contractions : '
+  xdSix.style.marginRight = '1opx'
+  xdSix.style.marginTop = '5x'
+  xdSix.style.whiteSpace = 'nowrap'
+  mainContent.appendChild(xdSix)
+
+  const respuestSeven = document.createElement('p')
+  respuestSeven.innerHTML = '<br> In spoken language and in informal contexts, it is common to use contractions in "short questions". For example, "Did you see that?" (Did you see that?) can be abbreviated as "Didja see that?" or "Can you help me?" (Can you help me?) is abbreviated as "Can you help me?". <br><br>'
+  mainContent.appendChild(respuestSeven)
+
+  const xdSeven = document.createElement('h4')
+  xdSeven.className = 'align-baseline'
+  xdSeven.innerHTML = '<br> Intonation: '
+  xdSeven.style.marginRight = '1opx'
+  xdSeven.style.marginTop = '5x'
+  xdSeven.style.whiteSpace = 'nowrap'
+  mainContent.appendChild(xdSeven)
+
+  const respuestCho = document.createElement('p')
+  respuestCho.innerHTML = '<br> Intonation plays an important role in the communication of short questions. Often a rising intonation is used at the end of the question to indicate that it is a question and not a statement. For example: "Are you coming?" (Are you going to come?) is pronounced with a rising tone on the last word. <br><br>'
+  mainContent.appendChild(respuestCho)
+
+  const xdCho = document.createElement('h4')
+  xdCho.className = 'align-baseline'
+  xdCho.innerHTML = '<br> Multiple Choice Questions: '
+  xdCho.style.marginRight = '1opx'
+  xdCho.style.marginTop = '5x'
+  xdCho.style.whiteSpace = 'nowrap'
+  mainContent.appendChild(xdCho)
+
+  const respuestNueve = document.createElement('p')
+  respuestNueve.innerHTML = '<br> The "short questions" are also used to formulate multiple choice questions. In this case, "or" is used to offer options. For example: "Do you want tea or coffee?" (Do you want tea or coffee?). <br><br>'
+  mainContent.appendChild(respuestNueve)
+
+  const paragroUnoP = document.createElement('h6')
+  paragroUnoP.innerHTML = '<br> Note: Remember that the construction of the "short questions" can vary according to the context and the specific grammatical structure. It is important to practice and become familiar with different examples to develop a solid understanding of how to formulate and get quick answers or confirm information.'
+  mainContent.appendChild(paragroUnoP)
+
+
+
+  
+
 }
 
 
