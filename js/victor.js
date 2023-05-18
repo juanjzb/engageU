@@ -225,11 +225,11 @@ function PresentContinuous () {
   
  }
 if (score < 4) {
-    scoreDiv.style.color = 'red';
+    scoreDiv.style.color = 'red'
   } else if (score > 4 && score <= 7) {
-    scoreDiv.style.color = 'orange';
+    scoreDiv.style.color = 'orange'
   } else {
-    scoreDiv.style.color = 'green';
+    scoreDiv.style.color = 'green'
   }
 }
 
@@ -241,7 +241,10 @@ function resetExercise() {
  // Code here for more code
 }
   
-
+/**
+ * Segundo tema ----------------------------------------------------------------------------------
+ * ++++++++++++ ----------------------------------------------------------------------------------
+ */
 
 function EverydayExpressions () {
   const nav = document.getElementById('sexo')
@@ -252,7 +255,7 @@ function EverydayExpressions () {
   //Code Here
 
   const parrafoUno = document.createElement('p')
-  parrafoUno.innerHTML = 'In the case of "everyday expressions", there is no strict formula for their creation, since they are phrases and expressions that arise naturally in the context of informal oral communication. However, there are some common characteristics that can be taken into account when using these types of expressions: <br>'
+  parrafoUno.innerHTML = 'In the case of "Everyday Expressions", there is no strict formula for their creation, since they are phrases and expressions that arise naturally in the context of informal oral communication. However, there are some common characteristics that can be taken into account when using these types of expressions: <br><br>'
   mainContent.appendChild(parrafoUno)
   
   const parrafoDos = document.createElement('h4')
@@ -281,7 +284,84 @@ function EverydayExpressions () {
   parrafoSeis.appendChild(textTres)
   mainContent.appendChild(parrafoSeis)
 
-  // Meterle el contenido al bloque anterior. 
+  const divContainerSeis = document.createElement('div')
+  divContainerSeis.style.display = 'flex'
+  divContainerSeis.appendChild(parrafoSeis)
+  const parrafoSiete = document.createElement('p')
+  parrafoSiete.innerHTML = ' <br> These expressions are adapted to the context and situation in which they are used. <br> They can vary according to the culture, the social group and the relationship <br> between the people who interact. <br><br><br>'
+  parrafoSiete.style.marginLeft = '40px'
+  parrafoSiete.style.marginTop = '9px'
+  parrafoSiete.style.marginBottom = '5px'
+  divContainerSeis.appendChild(parrafoSiete)
+  mainContent.appendChild(divContainerSeis)
+
+  const parrafoOcho = document.createElement('h4')
+  parrafoOcho.className = 'align-baseline'
+  parrafoOcho.style.marginLeft = '30px'
+  const textCuatro = document.createTextNode('Naturalness: ')
+  parrafoOcho.appendChild(textCuatro)
+  mainContent.appendChild(parrafoOcho)
+ 
+  const divContainerSiete = document.createElement('div')
+  divContainerSiete.style.display = 'flex'
+  divContainerSiete.appendChild(parrafoOcho)
+  const parrafoNueve = document.createElement('p')
+  parrafoNueve.innerHTML = 'Daily expressions are generated spontaneously and flow naturally in conversations. <br> They are not usually elaborate or structured sentences, but rather short and simple sentences.<br>'
+  parrafoNueve.style.marginLeft = '40px'
+  parrafoNueve.style.marginTop = '5px'
+  parrafoNueve.style.marginBottom = '12px'
+  divContainerSiete.appendChild(parrafoNueve)
+  mainContent.appendChild(divContainerSiete)
+
+  const parrafoDiez = document.createElement('h4')
+  parrafoDiez.className = 'align-baseline'
+  parrafoDiez.style.marginLeft = '30px'
+  parrafoDiez.style.marginTop = '50px'
+  parrafoDiez.style.marginRight = '8px'
+  const textCinco = document.createTextNode('Common use: ')
+  parrafoDiez.appendChild(textCinco)
+  mainContent.appendChild(parrafoDiez)
+
+  const divContainerOcho = document.createElement('div')
+  divContainerOcho.style.display = 'flex'
+  divContainerOcho.appendChild(parrafoDiez)
+  const parrafoOnce = document.createElement('p')
+  parrafoOnce.innerHTML = '<br><br>These expressions are used by many people in similar situations, making them <br> part of everyday communication and recognizable to native speakers. <br><br>'
+  parrafoOnce.style.marginLeft = '40px'
+  parrafoOnce.style.marginTop = '8px'
+  parrafoOnce.style.marginBottom = '50px'
+  divContainerOcho.appendChild(parrafoOnce)
+  mainContent.appendChild(divContainerOcho)
+  
+  const parrafoDoce = document.createElement('h3')
+  const textDoce = document.createTextNode('Here are some examples of each type of expression: ')
+  parrafoDoce.appendChild(textDoce)
+  mainContent.appendChild(parrafoDoce)
+
+  const parrafoTrece = document.createElement('h4')
+  parrafoTrece.className = 'align-baseline'
+  parrafoTrece.innerHTML = '<br> 1 ) Example : Informality '
+  parrafoTrece.style.marginRight = '10px'
+  parrafoTrece.style.marginTop = '5px'
+  mainContent.appendChild(parrafoTrece)
+
+  const divContainerTrece = document.createElement('div')
+  divContainerTrece.style.display = 'flex'
+  divContainerTrece.appendChild(parrafoTrece)
+  const parrafoCatorce = document.createElement('p')
+  parrafoCatorce.innerHTML = '<br>1. "Wanna hang out later?" - ¿Quieres salir conmigo mas tarde? <br><br> 2. "Im gonna crash at my friends place." - Voy a quedarme a dormir a casa de un amigo. <br><br>     3. "That movie was awesome" - ¡Esa pelicula estuvo genial! / estuvo increible <br><br> 4. "Whats the scoop?" - ¿Cual es el chisme? <br><br> 5. "Im beat, lets call it a day." - Estoy agotado, llamemos a esto el fin del dia / Estoy cansado, mejor mas tarde. <br><br> 6. "Im gonna grab a bite to eat." - Voy a comer algo rapido. <br><br> 7. "No way!" - De ninguna manera! <br><br> 8. "Im all ears." - Estoy todo oidos. <br><br> 9. "Lets hit the road." - Vamos a salir. <br><br> 10. "Whats the big deal?" - ¿Cual es el problema?'
+  parrafoCatorce.style.marginLeft = '-180px'
+  parrafoCatorce.style.marginRight = '5px'
+  parrafoCatorce.style.marginTop = '60px'
+  parrafoCatorce.style.marginBottom = '30px'
+  divContainerTrece.appendChild(parrafoCatorce)
+  mainContent.appendChild(divContainerTrece)
+
+
+
+
+
+
   // Investigar como meter un audio / video (Ver codigo de josias)
 }
 function ShortQuestions () {
