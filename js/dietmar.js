@@ -5,7 +5,7 @@ function Possesions () {
   nav.innerHTML = 'Possesions'
   nav.className = 'text-success'
 
-  // Tipos de texto
+  // Variables globales
   
   const parrafos = 'fw-bold fs-4'
   const parrafosAlt = 'fw-bold fs-3'
@@ -190,6 +190,94 @@ example_titles()
     collectiveNames_example.className = ejemplos
     mainContent.appendChild(collectiveNames_example)
   }
+
+  espacio()
+
+  // Practice
+
+  const practice_title = document.createElement('p')
+  const practice_title_text = document.createTextNode('Practice!')
+  practice_title.appendChild(practice_title_text)
+  practice_title.className = parrafosAlt
+  mainContent.appendChild(practice_title)
+
+  // Formulario
+
+  // Primer contenedor
+  const firstQuestion = document.createElement('div')
+  firstQuestion.className = 'primerDiv'
+  const firstLabel = document.createElement('label')
+  const firstLabel_text = document.createTextNode('The dog of Julia is a beautiful westie.') // Julia’s dog is a beautiful westie.
+  firstLabel.appendChild(firstLabel_text)
+  firstLabel.for = 'primeraPregunta'
+  const firstInput = document.createElement('input')
+  firstInput.className = 'm-2'
+  firstInput.type = 'text'
+  firstInput.id = 'primeraPregunta'
+  firstInput.name = 'primeraPregunta'
+  firstQuestion.appendChild(firstLabel)
+  firstQuestion.appendChild(firstInput)
+  mainContent.appendChild(firstQuestion)
+
+  const secondQuestion = document.createElement('div')
+  secondQuestion.className = 'segundoDiv'
+  const secondLabel = document.createElement('label')
+  const secondLabel_text = document.createTextNode('The boat of Sailor.') // The sailors’ boat
+  secondLabel.appendChild(secondLabel_text)
+  secondLabel.for = 'segundaPregunta'
+  const secondInput = document.createElement('input')
+  secondInput.className = 'm-2'
+  secondInput.type = 'text'
+  secondInput.id = 'segundaPregunta'
+  secondInput.name = 'segundaPregunta'
+  secondQuestion.appendChild(secondLabel)
+  secondQuestion.appendChild(secondInput)
+  mainContent.appendChild(secondQuestion)
+
+  const thirdQuestion = document.createElement('div')
+  thirdQuestion.className = 'tercerDiv'
+  const thirdLabel = document.createElement('label')
+  const thirdLabel_text = document.createTextNode('The cousin of my brother-in-Law.') // My brother-in-law’s cousin.
+  thirdLabel.appendChild(thirdLabel_text)
+  thirdLabel.for = 'tercerPregunta'
+  const thirdInput = document.createElement('input')
+  thirdInput.className = 'm-2'
+  thirdInput.type = 'text'
+  thirdInput.id = 'tercerPregunta'
+  thirdInput.name = 'tercerPregunta'
+  thirdQuestion.appendChild(thirdLabel)
+  thirdQuestion.appendChild(thirdInput)
+  mainContent.appendChild(thirdQuestion)
+
+  const fourthQuestion = document.createElement('div')
+  fourthQuestion.className = 'cuartoDiv'
+  const fourthLabel = document.createElement('label')
+  const fourthLabel_text = document.createTextNode('The children of Mario and Susan attend primary.') // Mario and Susan’s children attend primary school.
+  fourthLabel.appendChild(fourthLabel_text)
+  fourthLabel.for = 'cuartaPregunta'
+  const fourthInput = document.createElement('input')
+  fourthInput.className = 'm-2'
+  fourthInput.type = 'text'
+  fourthInput.id = 'cuartaPregunta'
+  fourthInput.name = 'cuartaPregunta'
+  fourthQuestion.appendChild(fourthLabel)
+  fourthQuestion.appendChild(fourthInput)
+  mainContent.appendChild(fourthQuestion)
+
+  const fifthQuestion = document.createElement('div')
+  fifthQuestion.className = 'quintoDiv'
+  const fifthLabel = document.createElement('label')
+  const fifthLabel_text = document.createTextNode('Rights of the people.') // People’s rights.
+  fifthLabel.appendChild(fifthLabel_text)
+  fifthLabel.for = 'quintaPregunta'
+  const fifthInput = document.createElement('input')
+  fifthInput.className = 'm-2'
+  fifthInput.type = 'text'
+  fifthInput.id = 'quintaPregunta'
+  fifthInput.name = 'quintaPregunta'
+  fifthQuestion.appendChild(fifthLabel)
+  fifthQuestion.appendChild(fifthInput)
+  mainContent.appendChild(fifthQuestion)
 }
 
 function ClassroomsObjects () {
