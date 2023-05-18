@@ -142,7 +142,7 @@ function QuestionsAndConversations() {
   const textoo = document.createElement("h3")
   const textotexto = document.createTextNode("2.Conversation...Are you from Seoul?")
   textoo.appendChild(textotexto)
-  textoo.style.marginTop = "30px"
+  textoo.style.marginTop = "50px"
   mainContent.appendChild(textoo)
 
 
@@ -157,6 +157,110 @@ function QuestionsAndConversations() {
   conversacion.innerHTML = "<b>Tim:</b> Are you from California, Jessica? <br> <b>Jessica:</b> Well, my family is in California now, But we're from south Korea originally. <br> <b>Tim:</b> Oh, my mother is Korean- from Seoul!. Are you from Seoul? <br> <b>Jessica:</b> No, we're not. We're from Daejeon. <br> <b>Tim:</b> So, is your first language Korean? <br> <b>Jessicca:</b> Yes, It is."
 
   mainContent.appendChild(conversacion)
+
+  const audio = document.createElement("audio");
+  audio.src = "./assets/img/Questions and conversations/Multimedia1.mp3";
+  audio.controls = true;
+  audio.style.border = "2px solid black"
+  document.body.appendChild(audio);
+  mainContent.appendChild(audio)
+
+  const B = document.createElement("h3")
+  const Btxt = document.createTextNode("B) Listening to Jessica and Tim Talk to Tony, Natasha and Monique Check True or false")
+  B.appendChild(Btxt)
+  B.style.marginTop = "50px"
+  B.style.textAlign = 'center'
+  mainContent.appendChild(B)
+
+  const testo = document.createElement("p")
+  testo.innerHTML = "1. Tony is from italy <br> 2. Natasha is from New York <br> 3. Monique's First language is English"
+  mainContent.appendChild(testo)
+
+  const audio2 = document.createElement('audio')
+  audio2.src = "./assets/img/Questions and conversations/Multimedia2.mp3"
+  audio2.controls = true;
+  audio2.style.border = "2px solid black"
+  audio2.style.margin = "0px"
+  document.body.appendChild(audio2)
+  mainContent.appendChild(audio2)
+
+// Aquí van los inputs
+const inputauno = document.createElement("input");
+inputauno.type = "text";
+inputauno.value = "1";
+
+const mensajeuno = document.createElement("div");
+
+inputauno.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    if (inputauno.value.toUpperCase() === "V") {
+      mensajeuno.textContent = "¡Incorrecto!";
+    } else if (inputauno.value.toUpperCase() === "F") {
+      mensajeuno.textContent = "¡Correcto!";
+    } else {
+      mensajeuno.textContent = "";
+    }
+  }
+});
+
+// Añade el input y el mensajeuno al documento
+mainContent.appendChild(inputauno);
+mainContent.appendChild(mensajeuno);
+
+// Aquí van los inputs
+const inputados = document.createElement("input");
+inputados.type = "text";
+inputados.value = "2";
+inputados.style.marginTop = "6px"
+
+const mensajedos = document.createElement("div");
+
+inputados.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    if (inputados.value.toUpperCase() === "V") {
+      mensajedos.textContent = "¡Correcto!";
+    } else if (inputados.value.toUpperCase() === "F") {
+      mensajedos.textContent = "¡Incorrecto!";
+    } else {
+      mensajedos.textContent = "";
+    }
+  }
+});
+
+// Añade el input y el mensajedos al documento
+mainContent.appendChild(inputados);
+mainContent.appendChild(mensajedos);
+
+// Aquí van los inputs
+const inputatres = document.createElement("input");
+inputatres.type = "text";
+inputatres.value = "3";
+inputatres.style.marginTop = "6px"
+
+const mensajetres = document.createElement("div");
+
+inputatres.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    if (inputatres.value.toUpperCase() === "V") {
+      mensajetres.textContent = "¡Incorrecto!";
+    } else if (inputatres.value.toUpperCase() === "F") {
+      mensajetres.textContent = "¡Correcto!";
+    } else {
+      mensajetres.textContent = "";
+    }
+  }
+});
+
+// Añade el input y el mensajetres al documento
+mainContent.appendChild(inputatres);
+mainContent.appendChild(mensajetres);
+
+
+
+  
+  
+
+
 
   
 
@@ -207,30 +311,49 @@ function checkConversationAnswer(index, answer) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 function ShortAnswers () {
-  const nav = document.getElementById('sexo')
-  nav.innerHTML = 'Short Answer'
-  nav.className = 'text-success'
+  const mainContent = document.getElementById('main-content');
+  mainContent.innerHTML = '';
+  
+  const h1 = document.createElement('h1')
+  const h1text = document.createTextNode("Unit III- Where are you from?")
+  h1.appendChild(h1text)
+  mainContent.appendChild(h1)
+  h1.className = "text-center text-primary"
+
+
+  const header = document.createElement("h3")
+  const headertext = document.createTextNode("Short Answers")
+  header.appendChild(headertext)
+  mainContent.appendChild(header)
+  header.className = "text-center"
+
+  const saying = document.createElement("p")
+  saying.innerHTML = "Decir ‘Yes, I do. / No, I don’t’ en ingles, es una forma más educada de decir: ‘Yes. / No.’  es por eso que las respuestas cortas (Short answers) son comunmente usadas. Para formar las respuestas cortas, hay que usar la primera palabra de la pregunta. (Este puede ser un verbo auxiliar o una forma del 'verb to be'.) Usa la forma larga (he does) en respuestas afirmativas (yes). Usa la forma corta (he doesn’t) en respuestas negativas (no). <br>"
+
+
+  
+  mainContent.appendChild(saying)
 }
 
 function WHQuestions () {
-  const nav = document.getElementById('sexo')
-  nav.innerHTML = 'Greetings'
-  nav.className = 'text-success'
+  //Code Here
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 const btnQuestionsAndConversations = document.getElementById(
   'btnQuestionsAndConversations'
