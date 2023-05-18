@@ -633,39 +633,32 @@ function greetings () {
   mainContent.appendChild(text2)
   mainContent.appendChild(imgNight)
   mainContent.appendChild(textnight)
+
+  const titleG = document.createElement('p')
+  titleG.className = 'fs-4'
+  titleG.innerHTML = '<br>These greetings are used in situations or spaces that require a slightly more serious and formal attitude. It is also used when we owe a degree of respect to whom we greet or when we are dealing with a person who is not very close to us.<br>You can use it in an interview, for example, or in a work or business meeting, and even when you have to go to the bank. <br> Lets see a small list with some formal greetings:'
+
+  mainContent.appendChild(titleG)
+
+  const listaG = document.createElement('ul')
+  listaG.className = 'fs-4'
+  listaG.innerHTML = '<li>Hello: Hola</li><li>morning: Buenos días</li><li>Good afternoon: Buenas tardes (entre las 12:00 pm y las 5:00 pm)</li><li>Good evening: Buenas tardes (entre las 6:00 pm y las 8:00 pm)</li><li>How are you?: ¿Cómo estás?</li><li>Good to see you: Que bueno verte</li><li>Nice to see you: Que agradable verte</li>'
+
+  mainContent.appendChild(listaG)
+
+  const titleG2 = document.createElement('h2')
+  titleG2.className = 'fs-4'
+  titleG2.innerHTML = 'Informal Greetings'
+
+  mainContent.appendChild(titleG2)
+
+  const listaG2 = document.createElement('ul')
+  listaG2.className = 'fs-4'
+  listaG2.innerHTML = '<li>Hi: Hola</li><li>Hey!: Hola </li><li>How’s it going?: ¿Cómo te ha ido?, ¿Cómo te está yendo?</li><li>How are you all?: ¿Cómo están todos?</li><li>How are you doing?: ¿Cómo vas/van?</li>'
+
+  mainContent.appendChild(listaG2)
 }
 
-////////////////////////////////////////////////////////////////////
-/* Boton de Introducing MySelf Vocabulary */
-function mySelf () {
-  const mainContent = document.getElementById('main-content')
-  mainContent.innerHTML = ''
-  const nav = document.getElementById('sexo')
-  nav.innerHTML = ''
-
-  const h1MySelf = document.createElement('h1')
-  const h1MySelf_text = document.createTextNode('Agreguen contenido 3')
-
-  h1MySelf.appendChild(h1MySelf_text)
-  mainContent.appendChild(h1MySelf)
-}
-
-///////////////////////////////////////////////////////////////////////
-/* Boton de Aplphabet */
-
-function alphabet () {
-  const mainContent = document.getElementById('main-content')
-  mainContent.innerHTML = ''
-  const nav = document.getElementById('sexo')
-  nav.innerHTML = 'Alphabet'
-  nav.className = 'text-success'
-
-  const h1Alphabet = document.createElement('h1')
-  const h1Alphabet_text = document.createTextNode('Agreguen contenido 5')
-
-  h1Alphabet.appendChild(h1Alphabet_text)
-  mainContent.appendChild(h1Alphabet)
-}
 /////////////////////////////////////////////////////////////////////////
 
 const btnPersonalInformation = document.getElementById('btnPersonalInformation')
