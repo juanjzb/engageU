@@ -5,12 +5,6 @@ function PresentContinuous () {
   nav.innerHTML = 'Present Continous'
   nav.className = 'text-success'
 
-  const h1 = document.createElement('h1')
-  h1.className = 'text-center text-success'
-  const textH1 = document.createTextNode('Present Continuous')
-  h1.appendChild(textH1)
-  mainContent.appendChild(h1)
-
   const paragrafh = document.createElement('p')
   const txtUno = document.createTextNode('The present continuous verb tense indicates that an action or condition is happening now, frequently,and may continue into the future. It generally refers to situations or actions that are being carried out at the moment and, as in Spanish, learning this tense is essential to have fluency and expression in any conversation in English.')
   paragrafh.appendChild(txtUno)
@@ -231,11 +225,11 @@ function PresentContinuous () {
   
  }
 if (score < 4) {
-    scoreDiv.style.color = 'red';
+    scoreDiv.style.color = 'red'
   } else if (score > 4 && score <= 7) {
-    scoreDiv.style.color = 'orange';
+    scoreDiv.style.color = 'orange'
   } else {
-    scoreDiv.style.color = 'green';
+    scoreDiv.style.color = 'green'
   }
 }
 
@@ -247,24 +241,228 @@ function resetExercise() {
  // Code here for more code
 }
   
-
-
-
-
-
-
-
-
+/**
+ * Segundo tema ----------------------------------------------------------------------------------
+ * ++++++++++++ ----------------------------------------------------------------------------------
+ */
 
 function EverydayExpressions () {
   const nav = document.getElementById('sexo')
-  nav.innerHTML = 'Greetings'
+  nav.innerHTML = 'Everyday Expressions'
   nav.className = 'text-success'
+  const mainContent = document.getElementById('main-content')
+  mainContent.innerHTML = ''
+  //Code Here
+
+  const parrafoUno = document.createElement('p')
+  parrafoUno.innerHTML = 'In the case of "Everyday Expressions", there is no strict formula for their creation, since they are phrases and expressions that arise naturally in the context of informal oral communication. However, there are some common characteristics that can be taken into account when using these types of expressions: <br><br>'
+  mainContent.appendChild(parrafoUno)
+  
+  const parrafoDos = document.createElement('h4')
+  parrafoDos.className = 'align-baseline'
+  parrafoDos.style.marginLeft = '30px'
+  const textDos = document.createTextNode(' Informality ')
+  parrafoDos.appendChild(textDos)
+  mainContent.appendChild(parrafoDos)
+
+  const divContainerCinco = document.createElement('div')
+  divContainerCinco.style.display = 'flex'
+  divContainerCinco.appendChild(parrafoDos)
+  const parrafoTres = document.createElement('p')
+  parrafoTres.innerHTML = "Everyday expressions are usually informal and colloquial, so they don't follow <br> strict grammar rules or have a formal tone. They are very simple phrases <br> to satisfy specific needs. <br>"
+  parrafoTres.style.marginLeft = '40px'
+  parrafoTres.style.marginTop = '3px'
+  parrafoTres.style.marginBottom = '20px'
+  divContainerCinco.appendChild(parrafoTres)
+  mainContent.appendChild(divContainerCinco)
+  
+  const parrafoSeis = document.createElement('h4')
+  parrafoSeis.className = 'align-baseline'
+  parrafoSeis.style.marginLeft = '30px'
+  parrafoSeis.style.marginTop = '30px'
+  const textTres = document.createTextNode(' Contextuality ')
+  parrafoSeis.appendChild(textTres)
+  mainContent.appendChild(parrafoSeis)
+
+  const divContainerSeis = document.createElement('div')
+  divContainerSeis.style.display = 'flex'
+  divContainerSeis.appendChild(parrafoSeis)
+  const parrafoSiete = document.createElement('p')
+  parrafoSiete.innerHTML = ' <br> These expressions are adapted to the context and situation in which they are used. <br> They can vary according to the culture, the social group and the relationship <br> between the people who interact. <br><br><br>'
+  parrafoSiete.style.marginLeft = '40px'
+  parrafoSiete.style.marginTop = '9px'
+  parrafoSiete.style.marginBottom = '5px'
+  divContainerSeis.appendChild(parrafoSiete)
+  mainContent.appendChild(divContainerSeis)
+
+  const parrafoOcho = document.createElement('h4')
+  parrafoOcho.className = 'align-baseline'
+  parrafoOcho.style.marginLeft = '30px'
+  const textCuatro = document.createTextNode(' Naturalness ')
+  parrafoOcho.appendChild(textCuatro)
+  mainContent.appendChild(parrafoOcho)
+ 
+  const divContainerSiete = document.createElement('div')
+  divContainerSiete.style.display = 'flex'
+  divContainerSiete.appendChild(parrafoOcho)
+  const parrafoNueve = document.createElement('p')
+  parrafoNueve.innerHTML = 'Daily expressions are generated spontaneously and flow naturally in conversations. <br> They are not usually elaborate or structured sentences, but rather short and simple sentences.<br>'
+  parrafoNueve.style.marginLeft = '40px'
+  parrafoNueve.style.marginTop = '5px'
+  parrafoNueve.style.marginBottom = '12px'
+  divContainerSiete.appendChild(parrafoNueve)
+  mainContent.appendChild(divContainerSiete)
+
+  const parrafoDiez = document.createElement('h4')
+  parrafoDiez.className = 'align-baseline'
+  parrafoDiez.style.marginLeft = '30px'
+  parrafoDiez.style.marginTop = '50px'
+  parrafoDiez.style.marginRight = '8px'
+  const textCinco = document.createTextNode(' Common use ')
+  parrafoDiez.appendChild(textCinco)
+  mainContent.appendChild(parrafoDiez)
+
+  const divContainerOcho = document.createElement('div')
+  divContainerOcho.style.display = 'flex'
+  divContainerOcho.appendChild(parrafoDiez)
+  const parrafoOnce = document.createElement('p')
+  parrafoOnce.innerHTML = '<br><br>These expressions are used by many people in similar situations, making them <br> part of everyday communication and recognizable to native speakers. <br><br>'
+  parrafoOnce.style.marginLeft = '40px'
+  parrafoOnce.style.marginTop = '8px'
+  parrafoOnce.style.marginBottom = '50px'
+  divContainerOcho.appendChild(parrafoOnce)
+  mainContent.appendChild(divContainerOcho)
+  
+  const parrafoDoce = document.createElement('h3')
+  const textDoce = document.createTextNode('Here are some examples of each type of expression: ')
+  parrafoDoce.appendChild(textDoce)
+  mainContent.appendChild(parrafoDoce)
+
+  const parrafoTrece = document.createElement('h4')
+  parrafoTrece.className = 'align-baseline'
+  parrafoTrece.innerHTML = '<br> 1 ) Examples : Informality '
+  parrafoTrece.style.marginRight = '10px'
+  parrafoTrece.style.marginTop = '5px'
+  mainContent.appendChild(parrafoTrece)
+
+  const divContainerTrece = document.createElement('div')
+  divContainerTrece.style.display = 'flex'
+  divContainerTrece.appendChild(parrafoTrece)
+  const parrafoCatorce = document.createElement('p')
+  parrafoCatorce.innerHTML = '<br>1. "Wanna hang out later?" - ¿Quieres salir conmigo mas tarde? <br><br> 2. "I´m gonna crash at my friend´s place." - Voy a quedarme a dormir a casa de un amigo. <br><br>     3. "That movie was awesome" - ¡Esa pelicula estuvo genial! / estuvo increible <br><br> 4. "What´s the scoop?" - ¿Cual es el chisme? <br><br> 5. "I´m beat, let´s call it a day." - Estoy agotado, llamemos a esto el fin del dia / Estoy cansado, mejor mas tarde. <br><br> 6. "I´m gonna grab a bite to eat." - Voy a comer algo rapido. <br><br> 7. "No way!" - De ninguna manera! <br><br> 8. "I´m all ears." - Estoy todo oidos. <br><br> 9. "Let´s hit the road." - Vamos a salir. <br><br> 10. "What´s the big deal?" - ¿Cual es el problema?'
+  parrafoCatorce.style.marginLeft = '-180px'
+  parrafoCatorce.style.marginRight = '5px'
+  parrafoCatorce.style.marginTop = '60px'
+  parrafoCatorce.style.marginBottom = '30px'
+  divContainerTrece.appendChild(parrafoCatorce)
+  mainContent.appendChild(divContainerTrece)
+
+  const nota = document.createElement('h6')
+  const txtNota = document.createTextNode('Note : These informal expressions have a more relaxed and colloquial tone, and are common in informal situations or among close friends. Remember that it is important to adapt the level of informality to the context and to the people with whom you are communicating.')
+  nota.style.marginBottom = '20px'
+  nota.appendChild(txtNota)
+  mainContent.appendChild(nota)
+
+  const parrafoQuince = document.createElement('h4')
+  parrafoQuince.className = 'align-baseline'
+  parrafoQuince.innerHTML = '<br> 2 ) Examples : Contextuality '
+  parrafoQuince.style.marginRight = '10px'
+  parrafoQuince.style.marginTop = '5px'
+  parrafoQuince.style.whiteSpace = 'nowrap'
+  mainContent.appendChild(parrafoQuince)
+
+  const divContainerNueve = document.createElement('div')
+  divContainerNueve.style.display = 'flex'
+  divContainerNueve.appendChild(parrafoQuince)
+  const parrafoDiesei = document.createElement('p')
+  parrafoDiesei.innerHTML = ' <br>1. "How´s the weather over there?" - ¿Como esta el clima por allá? - (Contexto: Conversación sobre el clima en una ubicación diferente.) <br><br> 2. "I´ll bring a bottle of wine." - Voy a traer una botella de vino. (Contexto: Invitación a una reunion social.) <br><br> 3. "Can you pass me the salt, please?" - ¿Me puedes pasar la sal,por favor? (Contexto: Durante ua comida) <br><br> 4. "I´ll be there in 5 minutes" -  Estaré allí en 5 minutos. (Contexto: acordar un encuentro) <br><br> 5. "I had a rough day at work." - Tuve un día duro en el trabajo. (Contexto: compartir experiencias del día) <br><br> 6. "Could you help me with this task?" - ¿Me podrías ayudar con esta tarea? (Contexto: solicitar asistencia) <br><br> 7. "Let´s meet at the coffee shop." - Encontremos en la cafetería. (Contexto: establecer un lugar de encuentro) <br><br> 8. "Do you have any recommendations for a good restaurant?" -  ¿Tienes alguna recomendación para un buen restaurante? (Contexto: buscar consejos sobre lugares para comer) <br><br> 9. "I´m sorry for the misunderstanding" -  Lo siento por el malentendido. (Contexto: disculparse por una confusión) <br><br> 10. "Are you available for a quick chat?" - ¿Estás disponible para una charla rápida? (Contexto: verificar la disponibilidad para una conversación)'
+  parrafoDiesei.style.marginLeft = '-180px'
+  parrafoDiesei.style.marginRight = '5px'
+  parrafoDiesei.style.marginTop = '60px'
+  parrafoDiesei.style.marginBottom = '30px'
+  divContainerNueve.appendChild(parrafoDiesei)
+  mainContent.appendChild(divContainerNueve)
+
+  const notaUno = document.createElement('h6')
+  const txtNotaDos = document.createTextNode('Note : These examples show how the meaning and use of expressions can vary depending on the context in which they are used. It is important to take context into account when communicating to ensure that the message is correctly understood.')
+  notaUno.style.marginBottom = '20px'
+  notaUno.style.marginRight = '5px'
+  notaUno.appendChild(txtNotaDos)
+  mainContent.appendChild(notaUno)
+
+  const parrafoDieSiete = document.createElement('h4')
+  parrafoDieSiete.className = 'align-baseline'
+  parrafoDieSiete.innerHTML = '<br> 3 ) Examples : Naturalness '
+  parrafoDieSiete.style.marginRight = '10px'
+  parrafoDieSiete.style.marginTop = '5px'
+  parrafoDieSiete.style.whiteSpace = 'nowrap'
+  mainContent.appendChild(parrafoDieSiete)
+
+
+  const divContainerDiez = document.createElement('div')
+  divContainerDiez.style.display = 'flex'
+  divContainerDiez.appendChild(parrafoDieSiete)
+  const parrafoDieocho = document.createElement('p')
+  parrafoDieocho.innerHTML = '<br>1. "I can´t believe it!" - ¡No puedo creerlo! <br><br> 2. "Oh well, that´s life." - Bueno, así es la vida. <br><br> 3. "You know what I mean?" - ¿Sabes a lo que me refiero? <br><br> 4. "I´m just going with the flow." - Solo me dejo llevar. <br><br> 5. "I guess we´ll figure it out." - Supongo que lo resolveremos <br><br> 6. "I´ll give it a shot." - Lo intentaré. <br><br> 7. "It´s no biggie." - No es gran cosa. <br><br> 8. "I´m not really a morning person." - Realmente no soy una persona de mañanas. <br><br> 9. "I´m not gonna lie, it was tough." - No voy a mentir, fue difícil. <br><br> 10. "I´m feeling under the weather." - Me siento un poco mal.'
+  parrafoDieocho.style.marginLeft = '-180px'
+  parrafoDieocho.style.marginRight = '5px'
+  parrafoDieocho.style.marginTop = '60px'
+  parrafoDieocho.style.marginBottom = '30px'
+  divContainerDiez.appendChild(parrafoDieocho)
+  mainContent.appendChild(divContainerDiez)
+
+  const notaDos = document.createElement('h6')
+  const txtNotaTres = document.createTextNode('Note : These expressions reflect spontaneity and naturalness in everyday communication. They are phrases that flow in a more informal and relaxed way, which helps convey a sense of authenticity in the interaction. Remember that naturalness also depends on the tone of voice and body language when using these expressions.')
+  notaDos.style.marginBottom = '20px'
+  notaDos.style.marginRight = '5px'
+  notaDos.appendChild(txtNotaTres)
+  mainContent.appendChild(notaDos)
+ 
+  const parrafoDieNueve = document.createElement('h4')
+  parrafoDieNueve.className = 'align-baseline'
+  parrafoDieNueve.innerHTML = '<br> 4 ) Examples : Common use '
+  parrafoDieNueve.style.marginRight = '10px'
+  parrafoDieNueve.style.marginTop = '5px'
+  parrafoDieNueve.style.whiteSpace = 'nowrap'
+  mainContent.appendChild(parrafoDieNueve)
+
+  const divContainerOnce = document.createElement('div')
+  divContainerOnce.style.display = 'flex'
+  divContainerOnce.appendChild(parrafoDieNueve)
+  const parrafoDieUno = document.createElement('p')
+  parrafoDieUno.innerHTML = '<br>1. "How are you?" - ¿Cómo estás? <br><br> 2. "Thank you" - Gracias <br><br> 3. "Sorry" - Perdón/Lo siento <br><br> 4. "Excuse me" - Disculpa <br><br> 5. "Can I help you?" - ¿Puedo ayudarte? <br><br> 6. "Nice to meet you" - Mucho gusto <br><br> 7. "I don´t know" - No sé <br><br> 8. "See you later" - Hasta luego <br><br> 9. "What´s your name?" - ¿Cómo te llamas? <br><br> 10. "Where is the restroom?" - ¿Dónde está el baño?'
+  parrafoDieUno.style.marginLeft = '-180px'
+  parrafoDieUno.style.marginRight = '5px'
+  parrafoDieUno.style.marginTop = '60px'
+  parrafoDieUno.style.marginBottom = '30px'
+  divContainerOnce.appendChild(parrafoDieUno)
+  mainContent.appendChild(divContainerOnce)
+
+  const notaTres = document.createElement('h6')
+  const txtNotaFor = document.createTextNode('Note : These are very common expressions that are used in various situations, both in formal and informal interactions. They are useful for striking up conversations, expressing courtesy, asking basic questions, and saying goodbye. Be sure to adapt these expressions according to the context and the corresponding cultural norms.')
+  notaTres.style.marginBottom = '50px'
+  notaTres.style.marginRight = '5px'
+  notaTres.appendChild(txtNotaFor)
+  mainContent.appendChild(notaTres)
+
+  const parafo = document.createElement('p')
+  const tet = document.createTextNode('It is important to remember that "everyday expressions" can vary depending on the language and culture in which they are used. They develop through the interaction between people and evolve over time, so there is no definitive list of daily expressions. The best way to learn and use them is through exposure to the language and interaction with native speakers in everyday situations.')
+  parafo.appendChild(tet)
+  mainContent.appendChild(parafo)
+
+
+  // Investigar como meter un audio / video (Ver codigo de josias)
 }
+
+
+
 function ShortQuestions () {
   const nav = document.getElementById('sexo')
-  nav.innerHTML = 'Greetings'
+  nav.innerHTML = 'Short questions'
   nav.className = 'text-success'
+  const mainContent = document.getElementById('main-content')
+  mainContent.innerHTML = ''
+  //Code here
 }
 
 
